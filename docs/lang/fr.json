@@ -1,0 +1,53 @@
+{
+    "title": "Skin Papercraft <span>Generator</span>",
+    "desc": {
+        "warn": "Utilisez Google Chrome ou Opera pour une meilleure expérience. Edge est signalé comme non compatible !",
+        "what": "Pourquoi utiliser notre outil ?",
+        "text": "Soyons honnêtes, c'est peut-être le seul générateur du genre. Et s'il y en a d'autres, ils n'auront pas les mêmes fonctionnalités que nous. Transformez facilement votre skin Minecraft en un <span style=\"color:#ff3399;\">modèle papercraft</span> imprimable de haute qualité. Vous pouvez utiliser votre nom d'utilisateur, UUID, ou télécharger directement un fichier de skin !",
+        "tagline": "Amenez votre personnage dans le monde réel !",
+        "discord": "Si vous avez des idées sympas, suggérez-les sur notre",
+        "donate": "Si vous avez trouvé cet outil utile, pensez à",
+        "donate_link": "faire un don",
+        "donate_end": "pour notre travail acharné. Nous apprécions !"
+    },
+    "options": {
+        "site": "Options du site :",
+        "darkmode": "Mode Sombre 👁️‍🗨️",
+        "nametag": "&nbsp;Options d'Étiquette 🏷️&nbsp;",
+        "nametag_desc": "💡 Supporte : &a, &#ff0000, &lt;gradient&gt;, &lt;rainbow&gt;, &amp;l (gras), &amp;m (barré), &amp;n (souligné), &amp;o (italique)",
+        "model_type": "&nbsp;Type de Modèle 🦾&nbsp;",
+        "model_normal": "Normal",
+        "model_movible": "Articulé",
+        "background": "&nbsp;Fond 🖼️&nbsp;",
+        "line": "&nbsp;Style de Ligne ✂️&nbsp;",
+        "line_dotted": "Pointillé",
+        "line_thin": "Fin (0.5 opacité)",
+        "line_none": "Aucun",
+        "advanced": "&nbsp;Avancé ⚙️&nbsp;",
+        "overlay": "Afficher l'Overlay de Skin",
+        "border_color": "Couleur de Bordure :",
+        "border_thickness": "Épaisseur :",
+        "outer_color": "Couleur Extérieure :",
+        "outer_thickness": "Épaisseur Ext. :",
+        "export": "&nbsp;Exporter 💾&nbsp;",
+        "download": "📥 Télécharger le Papercraft"
+    },
+    "controls": {
+        "enter_hint": "Appuyez sur ENTRÉE pour charger !",
+        "placeholder": "Nom du joueur, UUID, Base64 ou URL...",
+        "upload": "📁 Skin Personnalisé"
+    },
+    "showcase": {
+        "pixel": "Vous cherchez un pixelart comme celui-ci ? 💎",
+        "render": "Vous cherchez un rendu comme celui-ci ? 💎",
+        "animation": "Vous cherchez une animation comme celle-ci ? 💎"
+    },
+    "gallery": {
+        "view": "Voyez à quoi ils ressemblent dans la vraie vie ! 🖼️",
+        "close": "Fermer ❌",
+        "normal": "MODÈLE NORMAL !",
+        "movable": "MODÈLE ARTICULÉ !"
+    },
+    "more": { "tools": "Plus d'outils pour vous :" },
+    "footer": { "text": "Merci à <a href='https://alonsoaliaga.com/donate' rel='noopener' target='_blank' style='color:var(--link-color);'>AlonsoAliaga</a> et <a href='https://google.com' target='_blank' style='color:var(--link-color);'>Gemini</a> pour leur travail acharné durant le développement de cet outil." }
+}

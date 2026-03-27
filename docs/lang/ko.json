@@ -1,0 +1,53 @@
+{
+    "title": "Skin Papercraft <span>Generator</span>",
+    "desc": {
+        "warn": "더 나은 경험을 위해 Google Chrome 또는 Opera를 사용하세요. Edge는 호환되지 않는 것으로 보고되었습니다!",
+        "what": "왜 저희 도구를 사용해야 할까요?",
+        "text": "솔직히 말해서, 이 생성기는 아마 유일한 생성기일 것입니다. 다른 생성기가 있더라도 저희가 가진 기능은 없을 것입니다. 여러분의 마인크래프트 스킨을 출력 가능한 고품질 <span style=\"color:#ff3399;\">페이퍼크래프트 템플릿</span>으로 쉽게 바꿔보세요. 사용자 이름, UUID를 사용하거나 스킨 파일을 직접 업로드할 수 있습니다!",
+        "tagline": "여러분의 캐릭터를 현실 세계로 불러오세요!",
+        "discord": "멋진 아이디어가 있다면 저희 디스코드에서 제안해 주세요:",
+        "donate": "이 도구가 유용했다면, 저희의 노고를 위해",
+        "donate_link": "후원하기",
+        "donate_end": "를 고려해 주세요. 감사합니다!"
+    },
+    "options": {
+        "site": "사이트 옵션:",
+        "darkmode": "다크 모드 👁️‍🗨️",
+        "nametag": "&nbsp;네임태그 옵션 🏷️&nbsp;",
+        "nametag_desc": "💡 지원: &a, &#ff0000, &lt;gradient&gt;, &lt;rainbow&gt;, &amp;l (굵게), &amp;m (취소선), &amp;n (밑줄), &amp;o (기울임꼴)",
+        "model_type": "&nbsp;모델 유형 🦾&nbsp;",
+        "model_normal": "일반형",
+        "model_movible": "가동형",
+        "background": "&nbsp;배경 🖼️&nbsp;",
+        "line": "&nbsp;선 스타일 ✂️&nbsp;",
+        "line_dotted": "점선",
+        "line_thin": "얇게 (투명도 0.5)",
+        "line_none": "없음",
+        "advanced": "&nbsp;고급 설정 ⚙️&nbsp;",
+        "overlay": "스킨 레이어(오버레이) 표시",
+        "border_color": "테두리 색상:",
+        "border_thickness": "두께:",
+        "outer_color": "외부 색상:",
+        "outer_thickness": "외부 두께:",
+        "export": "&nbsp;내보내기 💾&nbsp;",
+        "download": "📥 페이퍼크래프트 다운로드"
+    },
+    "controls": {
+        "enter_hint": "ENTER를 눌러 불러오세요!",
+        "placeholder": "플레이어 이름, UUID, Base64 또는 URL...",
+        "upload": "📁 커스텀 스킨"
+    },
+    "showcase": {
+        "pixel": "이런 픽셀 아트를 찾고 계신가요? 💎",
+        "render": "이런 렌더링을 찾고 계신가요? 💎",
+        "animation": "이런 애니메이션을 찾고 계신가요? 💎"
+    },
+    "gallery": {
+        "view": "실제로 어떻게 보이는지 확인하세요! 🖼️",
+        "close": "닫기 ❌",
+        "normal": "일반형 모델!",
+        "movable": "가동형 모델!"
+    },
+    "more": { "tools": "당신을 위한 더 많은 도구:" },
+    "footer": { "text": "<a href='https://alonsoaliaga.com/donate' rel='noopener' target='_blank' style='color:var(--link-color);'>AlonsoAliaga</a>와 <a href='https://google.com' target='_blank' style='color:var(--link-color);'>Gemini</a>의 노고에 감사드립니다." }
+}

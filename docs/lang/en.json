@@ -1,0 +1,53 @@
+{
+    "title": "Skin Papercraft <span>Generator</span>",
+    "desc": {
+        "warn": "Use Google Chrome or Opera for a better experience. Edge is reported as not compatible!",
+        "what": "Why using our tool?",
+        "text": "Let's be honest, this is maybe the only one generator. And if there are others, they won't have the same features we have. Easily turn your Minecraft skin into a printable, high-quality <span style=\"color:#ff3399;\">papercraft template</span>. You can use your username, UUID, or upload a skin file directly!",
+        "tagline": "Bring your character to the real world!",
+        "discord": "If you have cool ideas, suggest them in our",
+        "donate": "If you found this tool useful, consider",
+        "donate_link": "making a donation",
+        "donate_end": "for our hard work. We appreciate it!"
+    },
+    "options": {
+        "site": "Site options:",
+        "darkmode": "Dark Mode 👁️‍🗨️",
+        "nametag": "&nbsp;Nametag Options 🏷️&nbsp;",
+        "nametag_desc": "💡 Supports: &a, &#ff0000, &lt;gradient&gt;, &lt;rainbow&gt;, &amp;l (bold), &amp;m (strike), &amp;n (under), &amp;o (italic)",
+        "model_type": "&nbsp;Model Type 🦾&nbsp;",
+        "model_normal": "Normal",
+        "model_movible": "Movable",
+        "background": "&nbsp;Background 🖼️&nbsp;",
+        "line": "&nbsp;Line Style ✂️&nbsp;",
+        "line_dotted": "Dotted",
+        "line_thin": "Thin (0.5 opacity)",
+        "line_none": "None",
+        "advanced": "&nbsp;Advanced ⚙️&nbsp;",
+        "overlay": "Show Skin Overlay",
+        "border_color": "Border Color:",
+        "border_thickness": "Thickness:",
+        "outer_color": "Outer Color:",
+        "outer_thickness": "Outer Thic.:",
+        "export": "&nbsp;Export 💾&nbsp;",
+        "download": "📥 Download Papercraft"
+    },
+    "controls": {
+        "enter_hint": "Press ENTER to load!",
+        "placeholder": "Player Name, UUID, Base64 or URL...",
+        "upload": "📁 Custom Skin"
+    },
+    "showcase": {
+        "pixel": "Looking for a pixelart like this? 💎",
+        "render": "Looking for a render like this one? 💎",
+        "animation": "Looking for an animation like this one? 💎"
+    },
+    "gallery":{
+        "view":"View how they look in real life! 🖼️",
+        "close": "Close ❌",
+        "normal": "NORMAL MODEL!",
+        "movable": "MOVABLE MODEL!"
+    },
+    "more": { "tools": "More tools for you:" },
+    "footer": { "text": "Thanks to <a href='https://alonsoaliaga.com/donate' rel='noopener' target='_blank' style='color:var(--link-color);'>AlonsoAliaga</a> and <a href='https://google.com' target='_blank' style='color:var(--link-color);'>Gemini</a> for his hard work during the development of this tool." }
+}

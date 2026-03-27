@@ -1,0 +1,53 @@
+{
+    "title": "Skin Papercraft <span>Generator</span>",
+    "desc": {
+        "warn": "より良い体験のために Google Chrome または Opera を使用してください。Edge は非互換として報告されています！",
+        "what": "なぜこのツールを使うのですか？",
+        "text": "正直に言うと、これはおそらく唯一のジェネレーターです。他にもあったとしても、私たちのような機能はないでしょう。あなたの Minecraft スキンを、印刷可能な高品質の <span style=\"color:#ff3399;\">ペーパークラフト・テンプレート</span> に簡単に変換できます。ユーザー名、UUID を使用するか、スキンファイルを直接アップロードできます！",
+        "tagline": "あなたのキャラクターを現実の世界へ！",
+        "discord": "素晴らしいアイデアがあれば、こちらで提案してください：",
+        "donate": "このツールが役に立った場合は、私たちの努力に対して",
+        "donate_link": "寄付",
+        "donate_end": "をご検討ください。感謝いたします！"
+    },
+    "options": {
+        "site": "サイトオプション:",
+        "darkmode": "ダークモード 👁️‍🗨️",
+        "nametag": "&nbsp;ネームタグ設定 🏷️&nbsp;",
+        "nametag_desc": "💡 対応: &a, &#ff0000, &lt;gradient&gt;, &lt;rainbow&gt;, &amp;l (太字), &amp;m (打ち消し線), &amp;n (下線), &amp;o (斜体)",
+        "model_type": "&nbsp;モデルタイプ 🦾&nbsp;",
+        "model_normal": "ノーマル",
+        "model_movible": "可動式",
+        "background": "&nbsp;背景 🖼️&nbsp;",
+        "line": "&nbsp;ラインスタイル ✂️&nbsp;",
+        "line_dotted": "点線",
+        "line_thin": "細線 (不透明度 0.5)",
+        "line_none": "なし",
+        "advanced": "&nbsp;高度な設定 ⚙️&nbsp;",
+        "overlay": "スキンオーバーレイを表示",
+        "border_color": "境界線の色:",
+        "border_thickness": "太さ:",
+        "outer_color": "外側の色:",
+        "outer_thickness": "外側の太さ:",
+        "export": "&nbsp;エクスポート 💾&nbsp;",
+        "download": "📥 ペーパークラフトをダウンロード"
+    },
+    "controls": {
+        "enter_hint": "ENTER キーを押して読み込み！",
+        "placeholder": "プレイヤー名、UUID、Base64、または URL...",
+        "upload": "📁 カスタムスキン"
+    },
+    "showcase": {
+        "pixel": "このようなピクセルアートをお探しですか？ 💎",
+        "render": "このようなレンダリングをお探しですか？ 💎",
+        "animation": "このようなアニメーションをお探しですか？ 💎"
+    },
+    "gallery": {
+        "view": "実際の見た目を確認する！ 🖼️",
+        "close": "閉じる ❌",
+        "normal": "ノーマルモデル！",
+        "movable": "可動式モデル！"
+    },
+    "more": { "tools": "おすすめのツール:" },
+    "footer": { "text": "このツールの開発における <a href='https://alonsoaliaga.com/donate' rel='noopener' target='_blank' style='color:var(--link-color);'>AlonsoAliaga</a> と <a href='https://google.com' target='_blank' style='color:var(--link-color);'>Gemini</a> の尽力に感謝します。" }
+}

@@ -1,0 +1,53 @@
+{
+    "title": "Skin Papercraft <span>Generator</span>",
+    "desc": {
+        "warn": "استخدم Google Chrome أو Opera للحصول على تجربة أفضل. تم الإبلاغ عن أن Edge غير متوافق!",
+        "what": "لماذا تستخدم أداتنا؟",
+        "text": "لنكن صادقين، ربما يكون هذا هو المولد الوحيد من نوعه. وحتى لو وجدت أخرى، فلن تمتلك نفس الميزات التي لدينا. حوّل سكن ماين كرافت الخاص بك بسهولة إلى <span style=\"color:#ff3399;\">قالب ورقي</span> عالي الجودة وقابل للطباعة. يمكنك استخدام اسم المستخدم الخاص بك، أو الـ UUID، أو رفع ملف السكن مباشرة!",
+        "tagline": "أحضر شخصيتك إلى العالم الحقيقي!",
+        "discord": "إذا كان لديك أفكار رائعة، فاقترحها في",
+        "donate": "إذا وجدت هذه الأداة مفيدة، ففكر في",
+        "donate_link": "تقديم تبرع",
+        "donate_end": "لعملنا الشاق. نحن نقدر ذلك!"
+    },
+    "options": {
+        "site": "خيارات الموقع:",
+        "darkmode": "الوضع الداكن 👁️‍🗨️",
+        "nametag": "&nbsp;خيارات علامة الاسم 🏷️&nbsp;",
+        "nametag_desc": "💡 يدعم: &a, &#ff0000, &lt;gradient&gt;, &lt;rainbow&gt;, &amp;l (عريض), &amp;m (مشطوب), &amp;n (تحته خط), &amp;o (مائل)",
+        "model_type": "&nbsp;نوع النموذج 🦾&nbsp;",
+        "model_normal": "عادي",
+        "model_movible": "قابل للتحريك",
+        "background": "&nbsp;الخلفية 🖼️&nbsp;",
+        "line": "&nbsp;نمط الخط ✂️&nbsp;",
+        "line_dotted": "منقط",
+        "line_thin": "رفيع (0.5 شفافية)",
+        "line_none": "بدون",
+        "advanced": "&nbsp;متقدم ⚙️&nbsp;",
+        "overlay": "إظهار طبقة السكن الخارجية",
+        "border_color": "لون الحدود:",
+        "border_thickness": " السماكة:",
+        "outer_color": "اللون الخارجي:",
+        "outer_thickness": "السماكة الخارجية:",
+        "export": "&nbsp;تصدير 💾&nbsp;",
+        "download": "📥 تحميل القالب الورقي"
+    },
+    "controls": {
+        "enter_hint": "اضغط ENTER للتحميل!",
+        "placeholder": "اسم اللاعب، UUID، Base64 أو رابط...",
+        "upload": "📁 سكن مخصص"
+    },
+    "showcase": {
+        "pixel": "هل تبحث عن فن بكسل مثل هذا؟ 💎",
+        "render": "هل تبحث عن تصيير مثل هذا؟ 💎",
+        "animation": "هل تبحث عن رسوم متحركة مثل هذه؟ 💎"
+    },
+    "gallery": {
+        "view": "شاهد كيف تبدو في الحياة الواقعية! 🖼️",
+        "close": "إغلاق ❌",
+        "normal": "نموذج عادي!",
+        "movable": "نموذج قابل للتحريك!"
+    },
+    "more": { "tools": "المزيد من الأدوات لك:" },
+    "footer": { "text": "الشكر لـ <a href='https://alonsoaliaga.com/donate' rel='noopener' target='_blank' style='color:var(--link-color);'>AlonsoAliaga</a> و <a href='https://google.com' target='_blank' style='color:var(--link-color);'>Gemini</a> على عملهم الشاق أثناء تطوير هذه الأداة." }
+}

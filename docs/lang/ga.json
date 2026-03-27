@@ -1,0 +1,53 @@
+{
+    "title": "Skin Papercraft <span>Generator</span>",
+    "desc": {
+        "warn": "Bain úsáid as Google Chrome nó Opera le haghaidh eispéireas níos fearr. Tuairiscítear nach bhfuil Edge comhoiriúnach!",
+        "what": "Cén fáth ár n-uirlis a úsáid?",
+        "text": "Bímis macánta, b'fhéidir gurb é seo an t-aon ghineadóir den sórt seo. Agus má tá cinn eile ann, ní bheidh na gnéithe céanna acu agus atá againne. Athraigh do chraiceann Minecraft go héasca ina <span style=\"color:#ff3399;\">theimpléad papercraft</span> ardchaighdeáin is féidir a phriontáil. Is féidir leat d'ainm úsáideora, UUID a úsáid nó comhad craicinn a uaslódáil go díreach!",
+        "tagline": "Tabhair do charactar isteach sa saol fíor!",
+        "discord": "Má tá smaointe iontacha agat, molaigh iad inár",
+        "donate": "Má fuair tú an uirlis seo úsáideach, smaoinigh ar",
+        "donate_link": "síntiús a thabhairt",
+        "donate_end": "as ár gcuid oibre crua. Is mór againn é!"
+    },
+    "options": {
+        "site": "Roghanna an tsuímh:",
+        "darkmode": "Mód Dorcha 👁️‍🗨️",
+        "nametag": "&nbsp;Roghanna Clib Ainm 🏷️&nbsp;",
+        "nametag_desc": "💡 Tacaíonn sé le: &a, &#ff0000, &lt;gradient&gt;, &lt;rainbow&gt;, &amp;l (trom), &amp;m (stailc), &amp;n (faoi), &amp;o (iodálach)",
+        "model_type": "&nbsp;Cineál Samhla 🦾&nbsp;",
+        "model_normal": "Gnáth",
+        "model_movible": "Inghluaiste",
+        "background": "&nbsp;Cúlra 🖼️&nbsp;",
+        "line": "&nbsp;Stíl Líne ✂️&nbsp;",
+        "line_dotted": "Poncaí",
+        "line_thin": "Tanaí (0.5 teimhneacht)",
+        "line_none": "Dada",
+        "advanced": "&nbsp;Ardsocruithe ⚙️&nbsp;",
+        "overlay": "Taispeáin Forleagan Craicinn",
+        "border_color": "Dath Teorann:",
+        "border_thickness": "Tiús:",
+        "outer_color": "Dath Seachtrach:",
+        "outer_thickness": "Tiús Seachtrach:",
+        "export": "&nbsp;Easpórtáil 💾&nbsp;",
+        "download": "📥 Íoslódáil Papercraft"
+    },
+    "controls": {
+        "enter_hint": "Brúigh ENTER chun lódáil!",
+        "placeholder": "Ainm Imreora, UUID, Base64 nó URL...",
+        "upload": "📁 Craiceann Saincheaptha"
+    },
+    "showcase": {
+        "pixel": "Ag lorg ealaín picteilíní mar seo? 💎",
+        "render": "Ag lorg rindreáil mar seo? 💎",
+        "animation": "Ag lorg beochan mar seo? 💎"
+    },
+    "gallery": {
+        "view": "Féach conas a bhreathnaíonn siad sa saol fíor! 🖼️",
+        "close": "Dún ❌",
+        "normal": "GNÁTHSHAMHAIL!",
+        "movable": "SAMHAIL INGHLUAISTE!"
+    },
+    "more": { "tools": "Tuilleadh uirlisí duit:" },
+    "footer": { "text": "Buíochas le <a href='https://alonsoaliaga.com/donate' rel='noopener' target='_blank' style='color:var(--link-color);'>AlonsoAliaga</a> agus <a href='https://google.com' target='_blank' style='color:var(--link-color);'>Gemini</a> as a gcuid oibre crua le linn fhorbairt na huirlise seo." }
+}

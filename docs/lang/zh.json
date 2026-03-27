@@ -1,0 +1,53 @@
+{
+    "title": "Skin Papercraft <span>Generator</span>",
+    "desc": {
+        "warn": "使用 Google Chrome 或 Opera 以获得更好的体验。据报告 Edge 不兼容！",
+        "what": "为什么要使用我们的工具？",
+        "text": "老实说，这可能是唯一的此类生成器。即使有其他的，它们也不会拥有我们所拥有的功能。轻松将您的 Minecraft 皮肤转换为可打印的高质量 <span style=\"color:#ff3399;\">纸模型模板</span>。您可以使用用户名、UUID 或直接上传皮肤文件！",
+        "tagline": "将您的角色带入现实世界！",
+        "discord": "如果您有酷炫的想法，请在我们的",
+        "donate": "如果您觉得这个工具有用，请考虑为我们的辛勤工作",
+        "donate_link": "进行捐赠",
+        "donate_end": "。我们不胜感激！"
+    },
+    "options": {
+        "site": "站点选项：",
+        "darkmode": "深色模式 👁️‍🗨️",
+        "nametag": "&nbsp;名字标签选项 🏷️&nbsp;",
+        "nametag_desc": "💡 支持：&a, &#ff0000, &lt;gradient&gt;, &lt;rainbow&gt;, &amp;l (粗体), &amp;m (删除线), &amp;n (下划线), &amp;o (斜体)",
+        "model_type": "&nbsp;模型类型 🦾&nbsp;",
+        "model_normal": "普通",
+        "model_movible": "可活动",
+        "background": "&nbsp;背景 🖼️&nbsp;",
+        "line": "&nbsp;线条样式 ✂️&nbsp;",
+        "line_dotted": "虚线",
+        "line_thin": "细线 (0.5 透明度)",
+        "line_none": "无",
+        "advanced": "&nbsp;高级 ⚙️&nbsp;",
+        "overlay": "显示皮肤外层 (Overlay)",
+        "border_color": "边框颜色：",
+        "border_thickness": "厚度：",
+        "outer_color": "外部颜色：",
+        "outer_thickness": "外部厚度：",
+        "export": "&nbsp;导出 💾&nbsp;",
+        "download": "📥 下载纸模型"
+    },
+    "controls": {
+        "enter_hint": "按回车键加载！",
+        "placeholder": "玩家名称, UUID, Base64 或 URL...",
+        "upload": "📁 自定义皮肤"
+    },
+    "showcase": {
+        "pixel": "正在寻找这样的像素画吗？ 💎",
+        "render": "正在寻找这样的渲染图吗？ 💎",
+        "animation": "正在寻找这样的动画吗？ 💎"
+    },
+    "gallery": {
+        "view": "看看它们在现实生活中的样子！ 🖼️",
+        "close": "关闭 ❌",
+        "normal": "普通模型！",
+        "movable": "可活动模型！"
+    },
+    "more": { "tools": "为您推荐更多工具：" },
+    "footer": { "text": "感谢 <a href='https://alonsoaliaga.com/donate' rel='noopener' target='_blank' style='color:var(--link-color);'>AlonsoAliaga</a> 和 <a href='https://google.com' target='_blank' style='color:var(--link-color);'>Gemini</a> 在此工具开发过程中的辛勤工作。" }
+}

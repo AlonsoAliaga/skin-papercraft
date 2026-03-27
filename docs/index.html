@@ -1,0 +1,2722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="https://raw.githubusercontent.com/AlonsoAliaga/skin-papercraft/main/assets/images/logo.png" type="image/png">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/AlonsoAliaga/skin-papercraft/main/assets/images/logo.png" type="image/png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Skin Papercraft Generator | AlonsoAliaga Development</title>
+
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <meta name="theme-color" content="#9a14ff"/>
+    <meta property="og:title" content="Skin Papercraft Generator | AlonsoAliaga Development">
+    <meta property="og:key" content="Skin Papercraft Generator | AlonsoAliaga Development">
+    <meta property="og:image" content="https://raw.githubusercontent.com/AlonsoAliaga/skin-papercraft/main/assets/images/logo.png">
+    <meta property="og:description" content="Bring your Minecraft character to real life!&#10;&#13;Easily turn your Minecraft skin into a printable, high-quality papercraft template.">
+    <meta property="description" content="Bring your Minecraft character to real life!&#10;&#13;Easily turn your Minecraft skin into a printable, high-quality papercraft template.">
+    <meta name="og:keywords" content="printable, papercraft, origami, 3d, spigot, bungeecord, paper, alonsoaliaga, minecraft, plugins, html, css, javascript, java, hex, rgb, generator, alonsoaliaga.github.io, alonsoaliaga.com, Minecraft hex generator,Minecraft hex color tool,gradient generator for Minecraft,Minecraft text gradient tool,Minecraft color presets,MiniMessage hex generator,Minecraft gradient maker,Minecraft chat colors,Minecraft hex syntax,Minecraft color codes,PlaceholderAPI hex,Minecraft hex presets,Minecraft gradient builder,Minecraft gradient preview,Minecraft RGB text,hex decode tool for Minecraft,decode hex gradient,color string decoder,convert hex to gradient,chat gradient editor,Minecraft scoreboard color,Minecraft tablist color,custom gradient chat,Minecraft RGB codes,Minecraft formatting tool,Minecraft color string parser,save gradient for Minecraft,load Minecraft hex gradient,Minecraft font color manager,Minecraft plugin dev tool,Minecraft text colorizer,custom rank color,Minecraft prefix gradient,color formatting for plugins,Minecraft hex tag tool,chat message colorizer,Minecraft plugin utility,MiniMessage color preview,Minecraft rank color generator,Minecraft name color generator,LuckPerms hex colors,chat hex formatting,PlaceholderAPI gradient plugin,ItemsAdder hex colors,Oraxen chat gradient,Minecraft UI gradient,Minecraft hex font preview,font color formatting,text color generator Minecraft,color string saver Minecraft,color gradient visualizer,Minecraft gradient editor,creador de degradados Minecraft,generador de colores hex Minecraft,formato hex para Minecraft,gradiente de colores en Minecraft,personalizar texto Minecraft,colores en scoreboard,colores en tablist,editar color de texto Minecraft,plugin de colores para Minecraft,códigos de color Minecraft,personalizar rangos con color,generador de texto RGB,guardar degradado Minecraft,importar colores hex,Minecraft español,crear degradado visual,Minecraft herramienta de color,herramienta para desarrolladores de plugins,formato MiniMessage en español,degradados en plugins,color personalizado para jugadores">
+    <meta name="keywords" content="printable, papercraft, origami, 3d, spigot, bungeecord, paper, alonsoaliaga, minecraft, plugins, html, css, javascript, java, hex, rgb, generator, alonsoaliaga.github.io, alonsoaliaga.com, Minecraft hex generator,Minecraft hex color tool,gradient generator for Minecraft,Minecraft text gradient tool,Minecraft color presets,MiniMessage hex generator,Minecraft gradient maker,Minecraft chat colors,Minecraft hex syntax,Minecraft color codes,PlaceholderAPI hex,Minecraft hex presets,Minecraft gradient builder,Minecraft gradient preview,Minecraft RGB text,hex decode tool for Minecraft,decode hex gradient,color string decoder,convert hex to gradient,chat gradient editor,Minecraft scoreboard color,Minecraft tablist color,custom gradient chat,Minecraft RGB codes,Minecraft formatting tool,Minecraft color string parser,save gradient for Minecraft,load Minecraft hex gradient,Minecraft font color manager,Minecraft plugin dev tool,Minecraft text colorizer,custom rank color,Minecraft prefix gradient,color formatting for plugins,Minecraft hex tag tool,chat message colorizer,Minecraft plugin utility,MiniMessage color preview,Minecraft rank color generator,Minecraft name color generator,LuckPerms hex colors,chat hex formatting,PlaceholderAPI gradient plugin,ItemsAdder hex colors,Oraxen chat gradient,Minecraft UI gradient,Minecraft hex font preview,font color formatting,text color generator Minecraft,color string saver Minecraft,color gradient visualizer,Minecraft gradient editor,creador de degradados Minecraft,generador de colores hex Minecraft,formato hex para Minecraft,gradiente de colores en Minecraft,personalizar texto Minecraft,colores en scoreboard,colores en tablist,editar color de texto Minecraft,plugin de colores para Minecraft,códigos de color Minecraft,personalizar rangos con color,generador de texto RGB,guardar degradado Minecraft,importar colores hex,Minecraft español,crear degradado visual,Minecraft herramienta de color,herramienta para desarrolladores de plugins,formato MiniMessage en español,degradados en plugins,color personalizado para jugadores">
+    <meta property="og:url" content="https://alonsoaliaga.github.io/index.html">
+    <meta property="og:site_name" content="Skin Papercraft Generator | AlonsoAliaga Development" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* FONTS */
+        @font-face {
+            font-family: MinecraftRegular;
+            src: url(https://raw.githubusercontent.com/AlonsoAliaga/rank-textures/main/assets/fonts/MinecraftRegular.otf);
+        }
+        @font-face {
+            font-family: MinecraftBold;
+            src: url(https://raw.githubusercontent.com/AlonsoAliaga/rank-textures/main/assets/fonts/MinecraftBold.otf);
+        }
+        @font-face {
+            font-family: MinecraftItalic;
+            src: url(https://raw.githubusercontent.com/AlonsoAliaga/rank-textures/main/assets/fonts/MinecraftItalic.otf);
+        }
+        @font-face {
+            font-family: MinecraftBoldItalic;
+            src: url(https://raw.githubusercontent.com/AlonsoAliaga/rank-textures/main/assets/fonts/MinecraftBoldItalic.otf);
+        }
+
+        /* Color Palette */
+        :root {
+            /* Light Mode */
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --border-color: #aaa;
+            
+            --btn-bg: #f8fdc9; 
+            --btn-border: #333333;
+            --btn-text: #272727;
+            
+            --input-bg: #ffffff;
+            --input-border: #cccccc;
+            --input-text: #000000;
+            --link-color: #5555FF;
+
+            /* Canvas Background Light */
+            --canvas-gradient-start: #f5f5f5;
+            --canvas-gradient-end: #dcdcdc;
+            
+            --container-bg: #f9f9f9;
+            --showcase-border: silver;
+        }
+
+        body.dark-mode {
+            /* Dark Mode */
+            --bg-color: #363636;    
+            --text-color: #d0d0d0;
+            --border-color: #555;
+
+            --btn-bg: #ffd5f2; 
+            --btn-border: #25172f;
+            --btn-text: #272727; 
+            
+            --input-bg: #e4d2de;
+            --input-border: #43245c;
+            --input-text: #272727;
+            --link-color: #5555FF;
+
+            /* Canvas Background Dark */
+            --canvas-gradient-start: #2a2a2a;
+            --canvas-gradient-end: #1a1a1a;
+            
+            --container-bg: #111;
+            --showcase-border: #555; 
+        }
+
+        body { 
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'MinecraftRegular', sans-serif;
+            overflow-x: hidden;
+            margin: auto;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Rainbow Text */
+        .rainbow {
+            background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow_animation 2s ease-in-out infinite;
+            background-size: 400% 100%;
+            font-family: 'MinecraftBold', sans-serif;
+        }
+        @keyframes rainbow_animation {
+            0%,100% { background-position: 0 0; }
+            50% { background-position: 100% 0; }
+        }
+
+        /* Top Notification Bar */
+        #online-counter {
+            width: 100%;
+            background-color: #00aa00; 
+            color: white;
+            text-align: center;
+            padding: 4px;
+            font-size: 16px;
+            text-shadow: 1px 1px 0 #000;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            min-height: 32px;
+        }
+
+        /* Warning Text */
+        .warning-text {
+            color: #FF5555; 
+            font-size: 15px;
+            text-shadow: 1px 1px 0 #000;
+            margin-bottom: 10px;
+            font-family: 'MinecraftBold';
+            margin-top: 5px;
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        /* Description Box */
+        .description-box {
+            border: 2px solid var(--border-color);
+            border-radius: 30px;
+            padding: 10px 50px; 
+            background-color: transparent;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 16px;
+            position: relative;
+        }
+
+        /* Titles */
+        .main-title {
+            font-size: 40px;
+            margin-bottom: 2px;
+            text-decoration: none;
+            color: #5555FF;
+            text-shadow: 2px 2px 0 #000;
+            font-family: 'MinecraftBold';
+        }
+        .main-title span { color: #ffffff; }
+
+        /* Custom Button Style */
+        .btn-custom {
+            font-family: 'MinecraftRegular';
+            border-radius: 25px;
+            border-color: var(--btn-border);
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            border-style: solid;
+            border-width: 2px;
+            padding: 4px 12px; 
+            cursor: pointer;
+            font-size: 14px; 
+            transition: transform 0.1s, filter 0.2s;
+            box-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            height: 28px; 
+        }
+        .btn-custom:active { transform: translate(2px, 2px); box-shadow: none; }
+        .btn-custom:disabled {
+            filter: grayscale(100%);
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+        
+        .btn-custom input[type="radio"] { 
+            accent-color: #ff3399; 
+            width: 14px; 
+            height: 14px; 
+            cursor: pointer;
+        }
+
+        /* UI Switch Toggle (ON/OFF) */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 36px;
+            height: 20px;
+            margin: 0;
+        }
+        .switch input { 
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: #888;
+            transition: .4s;
+            border-radius: 20px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.4);
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 14px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        }
+        input:checked + .slider {
+            background-color: #55ff55;
+        }
+        input:focus + .slider {
+            box-shadow: 0 0 1px #55ff55;
+        }
+        input:checked + .slider:before {
+            transform: translateX(16px);
+        }
+
+        /* Input Style */
+        .input-custom {
+            font-family: 'MinecraftRegular';
+            background-color: var(--input-bg);
+            border-color: var(--input-border);
+            color: var(--input-text);
+            border-style: solid;
+            /*border-width: 2px; */
+            border-radius: 10px; 
+            padding: 4px 8px; 
+            font-size: 14px;
+            text-align: center;
+            height: 28px;
+        }
+        .input-custom:focus { outline: none; }
+        .input-custom:disabled { opacity: 0.6; cursor: not-allowed; }
+
+        /* Color & Range Inputs specific adjustments */
+        input[type="color"].input-custom {
+            padding: 0px;
+            border-radius: 0px;
+            background-color: #ffffff00;
+            border-width: 0px;
+            height: 35px;
+            width: 50px;
+            cursor: pointer;
+        }
+        input[type="range"] {
+            accent-color: #5555FF;
+            cursor: pointer;
+        }
+
+        /* Main Layout */
+        .main-layout {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            justify-content: center;
+            gap: 20px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+        .ad-space { width: 160px; flex-shrink: 0; display: flex; flex-direction: column; gap: 20px; }
+        
+        /* App Container */
+        .app-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px; 
+            align-items: center;
+        }
+
+        /* Canvas Box */
+        .canvas-box {
+            width: 100%;
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            background: radial-gradient(circle at center, var(--canvas-gradient-start) 0%, var(--canvas-gradient-end) 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0; /* Margen interno eliminado para maximizar el tamaño del canvas */
+        }
+
+        /* Canvas Security Overlay */
+        .canvas-security-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 10;
+            -webkit-touch-callout: none;
+        }
+
+        #renderCanvas {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            image-rendering: pixelated; 
+            border-radius: 8px;
+            background-color: transparent;
+        }
+
+        /* Fieldsets */
+        fieldset {
+            border: 2px solid var(--border-color); 
+            border-radius: 20px;
+            padding: 10px 15px 15px 15px;
+            margin-top: 2px;
+            background: transparent;
+            position: relative; 
+            width: 100%;
+        }
+        
+        legend {
+            text-align: center;
+            padding: 0 5px; 
+            font-size: 14px;
+            color: var(--text-color);
+            font-family: 'MinecraftBold';
+        }
+
+        /* Custom Snackbar */
+        .snackbar-popup {
+            position: fixed;
+            bottom: -100px; 
+            left: 50%;
+            transform: translateX(-50%);
+            border: 2px solid; 
+            color: white;
+            padding: 10px 20px;
+            font-family: 'MinecraftRegular';
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            box-shadow: 0 4px 0 rgba(0,0,0,0.5); 
+            z-index: 10000; 
+            transition: bottom 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28); 
+            border-radius: 4px;
+            pointer-events: none; 
+        }
+        .snackbar-popup.show { bottom: 40px; }
+        .snackbar-success { background-color: #004000; border-color: #55ff55; }
+        .snackbar-error { background-color: #500000; border-color: #ff5555; }
+        .snackbar-info { background-color: #000050; border-color: #5555ff; }
+
+        /* Flags styling */
+        .lang-flag { width: 26px; height: 18px; object-fit: cover; cursor: pointer; opacity: 0.5; transition: opacity 0.2s, transform 0.2s; border-radius: 2px; }
+        .lang-flag:hover { transform: scale(1.1); opacity: 0.8; }
+        .lang-flag.active { opacity: 1; outline: 2px solid #5555FF; }
+
+        /* Feature Locked Overlay */
+        .ad-locked-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(236, 28, 28, 0.85);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-radius: 12px;
+            align-items: center;
+            justify-content: center;
+            cursor: not-allowed;
+            z-index: 50;
+            color: #ffffff;
+            font-family: 'MinecraftBold';
+            text-shadow: 1px 1px 0 #000;
+            padding: 5px;
+            text-align: center;
+            gap: 5px;
+        }
+
+        /* Showcase Styles */
+        .showcase-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 5px; 
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+        .showcase-box {
+            border: 2px solid var(--showcase-border);
+            padding: 0;
+            width: 32%;
+            border-radius: 0; 
+            display: flex;
+            justify-content: center;
+            background: transparent;
+            flex-direction: column; 
+            align-items: center;
+        }
+        .showcase-legend {
+            text-align: center;
+            width: 95%; 
+            padding: 0 5px 5px 5px;
+            font-family: 'MinecraftBold';
+            font-size: 14px;
+            color: var(--text-color);
+            margin: auto; 
+            line-height: 1.2;
+            background-color: var(--bg-color); 
+        }
+        .showcase-img {
+            height: 200px;
+            width: auto;
+            max-width: 100%;
+            cursor: pointer;
+            border-radius: 0 0 8px 8px;
+            transition: transform 0.2s;
+            margin-bottom: 0px;
+            object-fit: contain; 
+        }
+        .showcase-img:hover { transform: scale(1.02); }
+
+        /* Options/Examples Box Style */
+        .options { width: 100%; display: flex; justify-content: center; margin-top: 20px; }
+        .examples { width: 100%; border: 2px solid var(--border-color); border-radius: 30px; padding: 20px; margin-top: 10px; text-align: center; }
+        #tools-for-you a { color: var(--link-color); text-decoration: none; }
+        #tools-for-you a:hover { color: #FFFF55; text-decoration: none; }
+        #tools-for-you span.rainbow { display: inline-block; }
+        #tools-for-you span.rainbow a { background: inherit; -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+        /* Floating Button CSS */
+        #mybutton { position: fixed; bottom: 10px; right: 10px; padding: 0; border: none; background: none; font-family: MinecraftRegular; z-index: 9999; transition: all 0.3s; display: flex; flex-direction: column; align-items: center; }
+        #mybutton:hover { bottom: 15px; right: 15px; }
+        .floating-icon { width: 96px; height: auto; image-rendering: pixelated; filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.5)); cursor: pointer; }
+        #visitor-counter { margin-top: -5px; background: rgba(0,0,0,0.7); padding: 2px 8px; border-radius: 10px; }
+        #counter-amount { color: white; font-size: 12px; text-shadow: 1px 1px 0 #000; }
+
+        @media (max-width: 850px) {
+            .ad-space { display: none; }
+            .showcase-container { flex-wrap: wrap; }
+            .showcase-box { width: 100%; }
+            #mybutton { display: none; } 
+        }
+        #galleryDiv {
+            display: flex;
+            height: 90%;
+            width: 90%;
+            position: fixed;
+            z-index: 5000;
+            top: 50px;
+            background-color: rgb(0 0 0 / 86%);
+            border-radius: 15px;
+            border-style: double;
+            border-width: 5px;
+        }
+    </style>
+</head>
+<body class="dark-mode">
+
+    <!-- Notification Bar -->
+    <div id="online-counter" style="display:none;"></div>
+    
+    <!-- Main Layout -->
+    <div class="main-layout">
+        <div class="ad-space"></div>
+
+        <!-- Central Column -->
+        <div class="flex flex-col w-full items-center" style="max-width: 850px;">
+            <div class="minecraft_auth" data-max-width="750px" data-max-height="120px"></div>
+            <!-- Title -->
+            <div class="text-center w-full mt-4">
+                <a href="#" class="main-title block rainbow" data-i18n="title">
+                    Skin Papercraft <span>Generator</span>
+                </a>
+            </div>
+
+            <!-- Separator Line -->
+            <hr style="width: 100%; border-color: #888; margin-bottom: 5px;">
+
+            <!-- Warning Bar -->
+            <div class="warning-text" data-i18n="desc.warn">
+                Use Google Chrome or Opera for a better experience. Edge is reported as not compatible!
+            </div>
+
+            <!-- Description Box -->
+            <div class="description-box">
+                <p class="rainbow font-bold mb-2 text-xl" style="display:inline-block;" data-i18n="desc.what">Why using our tool?</p>
+                <p data-i18n="desc.text">
+                    Let's be honest, this is maybe the only one generator. And if there are others, they won't have the same features we have. Easily turn your Minecraft skin into a printable, high-quality <span style="color:#ff3399;">papercraft template</span>. You can use your username, UUID, or upload a skin file directly!
+                </p>
+                <p class="text-red-400 mt-2 font-bold" style="color:#ff5555;" data-i18n="desc.tagline">Bring your character to the real world!</p>
+                <div class="text-sm mt-2" style="color:#5555ff;">
+                    ⚠️ <span data-i18n="desc.discord">If you have cool ideas, suggest them in our</span> <a href="https://alonsoaliaga.com/discord" style="text-decoration:underline;">official discord server</a>.<br>
+                    💎 <span data-i18n="desc.donate">If you found this tool useful, consider</span> <a href="https://alonsoaliaga.com/donate" style="text-decoration:underline;" data-i18n="desc.donate_link">making a donation</a> <span data-i18n="desc.donate_end">for our hard work. We appreciate it!</span>
+                </div>
+            </div>
+
+            <!-- Site Options & Language Flags -->
+            <div style="margin-bottom: 5px; width: 100%; display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap;">
+                <div class="flex items-center">
+                    <span class="font-bold mr-2" data-i18n="options.site">Site options:</span>
+                    <div class="btn-custom">
+                        <input type="checkbox" id="darkModeCheck" checked class="mr-2" style="width: 16px; height: 16px; cursor: pointer; accent-color: #5555FF;">
+                        <label for="darkModeCheck" class="cursor-pointer font-bold" data-i18n="options.darkmode">Dark Mode 👁️‍🗨️</label>
+                    </div>
+                </div>
+                <!-- Language Flags -->
+                <div class="flex items-center" style="gap: 6px;" id="flagsContainer">
+                    <button id="langAutoBtn" style="background-color: #3b82f6; color: white; border: 2px solid #2563eb; border-radius: 20px; padding: 2px 8px; font-size: 11px; font-family: 'MinecraftBold'; text-transform: uppercase; box-shadow: 2px 2px 0px rgba(0,0,0,0.3); transition: opacity 0.2s, filter 0.2s; cursor: pointer;">🤖 AUTO</button>
+                </div>
+            </div>
+            <button id="viewGalleryBtn" data-i18n="gallery.view" style="width: 75%;;margin-bottom: 5px;background-color: #fa4518; color: white; border: 2px solid #9c0505; border-radius: 20px; padding: 5px 15px; font-size: 18px; font-family: 'MinecraftBold'; text-transform: uppercase; box-shadow: 2px 2px 0px rgba(0,0,0,0.3); transition: opacity 0.2s, filter 0.2s; cursor: pointer;">VIEW GALLERY 🖼️</button>
+            <!-- App Container (Full Width Setup) -->
+            <div class="app-container">
+                
+                <!-- TOP CONTROLS (Input & Upload) -->
+                <div class="flex flex-wrap w-full gap-4 justify-center items-center">
+                    <div class="flex flex-col items-center">
+                        <span class="text-xs font-bold mb-1 opacity-80" data-i18n="controls.enter_hint">Press ENTER to load!</span>
+                        <input type="text" id="genericInput" class="input-custom w-64" style="border-radius: 25px; height: 36px; font-size: 16px;" data-i18n="[placeholder]controls.placeholder" placeholder="Player Name, UUID, Base64 or URL...">
+                    </div>
+                    
+                    <div class="flex flex-col items-center relative" style="margin-top: 16px;" id="feature-customskin">
+                        <label class="btn-custom w-64 justify-center shadow-lg" style="height: 36px; cursor: pointer;">
+                            <span data-i18n="controls.upload">📁 Custom Skin</span>
+                            <input type="file" id="skinInput" accept="image/png" class="hidden">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Canvas / Main Content Area (Wide & High-Res) -->
+                <div class="canvas-box w-full" id="mainContainer">
+                    <!-- Security Overlay to block right click / dragging directly from image -->
+                    <div class="canvas-security-overlay" oncontextmenu="return false;"></div>
+                    <!-- Alta resolución nativa 1920x1200 -->
+                    <canvas id="renderCanvas" width="3508" height="2480"></canvas>
+                </div>
+
+                <!-- BOTTOM CONTROLS -->
+                <div class="flex flex-wrap w-full justify-center items-stretch gap-4">
+                    
+                    <div class="w-full">
+                        <!-- Nametag Options -->
+                        <fieldset>
+                            <legend data-i18n="options.nametag">&nbsp;Nametag Options 🏷️&nbsp;</legend>
+                            <div class="flex flex-col gap-2 p-2">
+                                <input type="text" id="nametagInput" class="input-custom w-1/2 mx-auto" value="&4&lCREATOR &dAlonsoAliaga &a[DEV]" placeholder="e.g. <rainbow><l>Name</rainbow>">
+                                <span class="opacity-75 mt-1 text-center font-bold" style="font-size: 10px;" data-i18n="options.nametag_desc">
+                                    💡 Supports: &a, &#ff0000, &lt;gradient:c1:c2:...&gt;, &lt;rainbow&gt;, &lt;l&gt;, &lt;st&gt;
+                                </span>
+                                <div class="profile_auth"></div>
+                            </div>
+                            
+                        </fieldset>
+                    </div>
+
+                    <div class="w-full flex gap-4 flex-wrap">
+                        <div class="flex-1 min-w-[300px]">
+                            <!-- Model Type Options -->
+                            <fieldset id="feature-modeltype" class="h-full">
+                                <legend data-i18n="options.model_type">&nbsp;Model Type 🦾&nbsp;</legend>
+                                <div class="flex justify-center gap-4 mb-2 px-2 text-sm font-bold flex-wrap mt-2 pb-[5px]">
+                                    <label class="flex items-center gap-2 cursor-pointer">
+                                        <input type="radio" name="modelType" value="normal" checked> <span data-i18n="options.model_normal">Normal</span>
+                                    </label>
+                                    <label class="flex items-center gap-2 cursor-pointer">
+                                        <input type="radio" name="modelType" value="movible"> <span data-i18n="options.model_movible">Movible</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="flex-1 min-w-[300px]">
+                            <!-- Background Options -->
+                            <fieldset class="h-full">
+                                <legend data-i18n="options.background">&nbsp;Background 🖼️&nbsp;</legend>
+                                <div class="flex justify-center gap-2 px-2 text-sm font-bold mt-2 mb-2 pb-[5px]">
+                                    <select id="bgSelect" class="input-custom w-full max-w-[200px]" style="height:28px; font-size:12px;"></select>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="w-full">
+                        <!-- Line Style Options -->
+                        <fieldset id="feature-linestyle">
+                            <legend data-i18n="options.line">&nbsp;Line Style ✂️&nbsp;</legend>
+                            <div class="flex justify-center gap-4 mb-2 px-2 text-sm font-bold flex-wrap mt-2">
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="lineStyle" value="dotted" checked> <span data-i18n="options.line_dotted">Dotted</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="lineStyle" value="thin"> <span data-i18n="options.line_thin">Thin (0.5 opacity)</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input type="radio" name="lineStyle" value="none"> <span data-i18n="options.line_none">None</span>
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="w-full">
+                        <!-- Advanced Options -->
+                        <fieldset id="feature-advanced">
+                            <legend data-i18n="options.advanced">&nbsp;Advanced ⚙️&nbsp;</legend>
+                            <div class="flex flex-col gap-2 mb-2 px-2 mt-2 text-sm font-bold">
+                                
+                                <div class="flex justify-center gap-6 flex-wrap mt-1">
+                                    <label class="flex items-center gap-2 cursor-pointer" title="Show overlay layer from Minecraft skin">
+                                        <label class="switch">
+                                            <input type="checkbox" id="overlayToggle" checked>
+                                            <span class="slider"></span>
+                                        </label>
+                                        <span data-i18n="options.overlay">Show Skin Overlay</span>
+                                    </label>
+
+                                    <div class="flex items-center gap-2 border-l-2 pl-4 border-[var(--border-color)]">
+                                        <span data-i18n="options.border_color">Border Color:</span>
+                                        <input type="color" id="borderColorInput" class="input-custom" value="#000000" title="Color for outer shape cut lines">
+                                    </div>
+
+                                    <div class="flex items-center gap-2">
+                                        <span data-i18n="options.border_thickness">Thickness:</span>
+                                        <input type="range" id="borderThicknessInput" min="0.5" max="5" step="0.5" value="1.5">
+                                        <span id="borderThicknessVal" class="w-6 text-center">1.5</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex justify-center gap-6 flex-wrap pt-2 mt-1 border-t border-dashed border-[var(--border-color)]">
+                                    <div class="flex items-center gap-2">
+                                        <span data-i18n="options.outer_color">Outer Color:</span>
+                                        <input type="color" id="outerBorderColorInput" class="input-custom" value="#ffffff" title="Color for the thick outer background border">
+                                    </div>
+
+                                    <div class="flex items-center gap-2">
+                                        <span data-i18n="options.outer_thickness">Outer Thic.:</span>
+                                        <input type="range" id="outerBorderThicknessInput" min="0" max="40" step="1" value="15">
+                                        <span id="outerBorderThicknessVal" class="w-6 text-center">15</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="w-full flex justify-center">
+                        <!-- Export -->
+                        <fieldset>
+                            <legend data-i18n="options.export">&nbsp;Export 💾&nbsp;</legend>
+                            <div class="p-2 flex justify-center">
+                                <button id="exportBtn" disabled class="btn-custom justify-center font-bold shadow-md px-6 whitespace-nowrap" style="width: min-content; background:#55ff55; color: #000; border-color:#00aa00; font-size: 16px; height: 36px;">
+                                    <span data-i18n="options.download">📥 Download Papercraft</span>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Showcase Section -->
+            <div class="showcase-container" style="margin-top: 25px;">
+                <fieldset class="showcase-box" style="display: flex; justify-content: center;">
+                    <legend class="showcase-legend" id="thelegend" data-i18n="showcase.pixel">Looking for a pixelart like this? 💎</legend>
+                    <img src="https://raw.githubusercontent.com/AlonsoAliaga/rank-textures/main/assets/showcase/pixelart-showcase.png" class="showcase-img" onclick="window.open('https://alonsoaliaga.com/mcpfp', '_blank');">
+                </fieldset>
+                
+                <fieldset class="showcase-box" style="display: flex; justify-content: center;">
+                    <legend class="showcase-legend" id="thelegend" data-i18n="showcase.render">Looking for a render like this one? 💎</legend>
+                    <img src="https://raw.githubusercontent.com/AlonsoAliaga/rank-textures/main/assets/showcase/render-showcase.png" class="showcase-img" onclick="window.open('https://alonsoaliaga.com/mc-renders', '_blank');">
+                </fieldset>
+                
+                <fieldset class="showcase-box" style="display: flex; justify-content: center;">
+                    <legend class="showcase-legend" id="thelegend" data-i18n="showcase.animation">Looking for an animation like this one? 💎</legend>
+                    <img src="https://raw.githubusercontent.com/AlonsoAliaga/rank-textures/main/assets/showcase/skin-showcase.gif" class="showcase-img" onclick="window.open('https://alonsoaliaga.com/mc-skin', '_blank');">
+                </fieldset>
+            </div>
+
+            <!-- More Tools Section -->
+            <div class="options">
+                <div style="border-radius: 25px;font-size: 18px ;padding-top: 20px;padding-bottom: 20px; font-family: MinecraftRegular;" class="examples">
+                    <h2 style="font-size: 18px; font-family: MinecraftBold;" data-i18n="more.tools">More tools for you:</h2>
+                    <div style="text-align: left;font-size: 20px;" id="tools-for-you"></div>
+                    <br>
+                    <a href="https://alonsoaliaga.github.io" rel="noopener" target="_blank" style="font-size: 18px; font-family: MinecraftBold; color: var(--link-color); text-decoration: none;">AlonsoAliaga Development</a>
+                </div>
+            </div>
+            
+            <h2 style="font-size: 15px ;text-align: center; margin-top: 10px;" data-i18n="footer.text">
+                Thanks to <a href="https://alonsoaliaga.com/donate" rel="noopener" target="_blank" style="color:var(--link-color);">AlonsoAliaga</a> and <a href="https://google.com" target="_blank" style="color:var(--link-color);">Gemini</a> for his hard work during the development of this tool.
+            </h2>
+            <br>
+            <div class="profile_input_label" data-max-width="750px" data-max-height="120px"></div>
+        </div>
+        <div class="ad-space"></div>
+        <div id="galleryDiv" style="display: none;flex-direction: column;justify-content: center;align-items: center;">
+            <div style="display: inline-flex;flex-direction: row;gap: 50px; padding: 15px;align-self: center;">
+                <div class="rainbow" style="font-size: 43px;display: inline-flex;flex-direction: column;justify-content: center;align-items: center;">
+                    <span data-i18n="gallery.normal">NORMAL MODEL!</span>
+                    <img width="500rem" src="../assets/images/skin-papercraft-normal.png">
+                </div>
+                <div class="rainbow" style="font-size: 43px;display: inline-flex;flex-direction: column;justify-content: center;align-items: center;">
+                    <span data-i18n="gallery.movable">MOVABLE MODEL!</span>
+                    <img width="500rem" src="../assets/images/skin-papercraft-movable.png">
+                </div>
+            </div>
+            <br>
+            <div id="closeGalleryBtn" data-i18n="gallery.close" style="color: #ffffff;font-size: 25px;font-weight: bolder;background-color: #fd5757;padding: 10px 50px;border-radius: 15px;border-color: #6d0000;border-width: 3px;text-shadow: #000;">CLOSE ❌</div>
+            <br>
+            <div class="profile_input_label" data-max-width="750px" data-max-height="120px"></div>
+        </div>
+    </div>
+    
+    <!-- Floating Visitor Counter -->
+    <div id="mybutton">
+        <a href="https://alonsoaliaga.github.io">
+            <img class="floating-icon" src="https://raw.githubusercontent.com/AlonsoAliaga/alonsoaliaga.github.io/main/assets/img/apple-touch-icon.png">
+        </a>
+        <div id="visitor-counter">
+            <span id="counter-amount" style="font-family: MinecraftBold;font-weight: bold;">Visits: 0</span>
+        </div>
+    </div>
+
+    <!-- Custom Snackbar -->
+    <div id="customSnackbar" class="snackbar-popup">
+        <span id="snackbarIcon" style="font-size: 20px;">✅</span>
+        <div style="text-align: center;">
+            <div style="font-weight: bold; font-size: 16px;" id="snackbarTitle">Success!</div>
+            <div style="font-size: 12px; opacity: 0.9;" id="snackbarMsg">Message</div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+
+    <script>
+        // ==========================================
+        // === TRANSLATION ENGINE (i18n) ============
+        // ==========================================
+        const AVAILABLE_LANGUAGES = ['en', 'es', 'fr', 'it', 'zh', 'ja', 'ko', 'de', 'ar', 'ga'];
+        const DEFAULT_LANGUAGE = 'en';
+        let currentLanguage = DEFAULT_LANGUAGE;
+
+        const TRANSLATIONS = {
+            "en": {
+                "title": "Skin Papercraft <span>Generator</span>",
+                "desc": {
+                    "warn": "Use Google Chrome or Opera for a better experience. Edge is reported as not compatible!",
+                    "what": "Why using our tool?",
+                    "text": "Let's be honest, this is maybe the only one generator. And if there are others, they won't have the same features we have. Easily turn your Minecraft skin into a printable, high-quality <span style=\"color:#ff3399;\">papercraft template</span>. You can use your username, UUID, or upload a skin file directly!",
+                    "tagline": "Bring your character to the real world!",
+                    "discord": "If you have cool ideas, suggest them in our",
+                    "donate": "If you found this tool useful, consider",
+                    "donate_link": "making a donation",
+                    "donate_end": "for our hard work. We appreciate it!"
+                },
+                "options": {
+                    "site": "Site options:",
+                    "darkmode": "Dark Mode 👁️‍🗨️",
+                    "nametag": "&nbsp;Nametag Options 🏷️&nbsp;",
+                    "nametag_desc": "💡 Supports: &a, &#ff0000, &lt;gradient&gt;, &lt;rainbow&gt;, &amp;l (bold), &amp;m (strike), &amp;n (under), &amp;o (italic)",
+                    "model_type": "&nbsp;Model Type 🦾&nbsp;",
+                    "model_normal": "Normal",
+                    "model_movible": "Movable",
+                    "background": "&nbsp;Background 🖼️&nbsp;",
+                    "line": "&nbsp;Line Style ✂️&nbsp;",
+                    "line_dotted": "Dotted",
+                    "line_thin": "Thin (0.5 opacity)",
+                    "line_none": "None",
+                    "advanced": "&nbsp;Advanced ⚙️&nbsp;",
+                    "overlay": "Show Skin Overlay",
+                    "border_color": "Border Color:",
+                    "border_thickness": "Thickness:",
+                    "outer_color": "Outer Color:",
+                    "outer_thickness": "Outer Thic.:",
+                    "export": "&nbsp;Export 💾&nbsp;",
+                    "download": "📥 Download Papercraft"
+                },
+                "controls": {
+                    "enter_hint": "Press ENTER to load!",
+                    "placeholder": "Player Name, UUID, Base64 or URL...",
+                    "upload": "📁 Custom Skin"
+                },
+                "showcase": {
+                    "pixel": "Looking for a pixelart like this? 💎",
+                    "render": "Looking for a render like this one? 💎",
+                    "animation": "Looking for an animation like this one? 💎"
+                },
+                "gallery":{
+                    "view":"View how they look in real life! 🖼️",
+                    "close": "Close ❌",
+                    "normal": "NORMAL MODEL!",
+                    "movable": "MOVABLE MODEL!"
+                },
+                "more": { "tools": "More tools for you:" },
+                "footer": { "text": "Thanks to <a href='https://alonsoaliaga.com/donate' rel='noopener' target='_blank' style='color:var(--link-color);'>AlonsoAliaga</a> and <a href='https://google.com' target='_blank' style='color:var(--link-color);'>Gemini</a> for his hard work during the development of this tool." }
+            },
+            "es": {
+                "title": "Skin Papercraft <span>Generator</span>",
+                "desc": {
+                    "warn": "Usa Google Chrome u Opera para una mejor experiencia. ¡Edge se reporta como no compatible!",
+                    "what": "¿Por qué usar nuestra herramienta?",
+                    "text": "Seamos honestos, este es probablemente el único generador. Y si hay otros, no tendrán las mismas características que nosotros. Convierte fácilmente tu skin de Minecraft en una <span style=\"color:#ff3399;\">plantilla papercraft</span> de alta calidad lista para imprimir. ¡Puedes usar tu nombre de usuario, UUID, o subir un archivo directamente!",
+                    "tagline": "¡Trae tu personaje al mundo real!",
+                    "discord": "Si tienes buenas ideas, sugiérelas en nuestro",
+                    "donate": "Si encontraste útil esta herramienta, considera",
+                    "donate_link": "hacer una donación",
+                    "donate_end": "por nuestro duro trabajo. ¡Lo apreciamos!"
+                },
+                "options": {
+                    "site": "Opciones del sitio:",
+                    "darkmode": "Modo Oscuro 👁️‍🗨️",
+                    "nametag": "&nbsp;Opciones de Nametag 🏷️&nbsp;",
+                    "nametag_desc": "💡 Soporta: &a, &#ff0000, &lt;gradient&gt;, &lt;rainbow&gt;, &amp;l (bold), &amp;m (strike), &amp;n (under), &amp;o (italic)",
+                    "model_type": "&nbsp;Tipo de Modelo 🦾&nbsp;",
+                    "model_normal": "Normal",
+                    "model_movible": "Movible",
+                    "background": "&nbsp;Fondo 🖼️&nbsp;",
+                    "line": "&nbsp;Estilo de Línea ✂️&nbsp;",
+                    "line_dotted": "Punteada (Dotted)",
+                    "line_thin": "Fina (Thin)",
+                    "line_none": "Ninguna",
+                    "advanced": "&nbsp;Avanzado ⚙️&nbsp;",
+                    "overlay": "Mostrar Capa (Overlay)",
+                    "border_color": "Color del Borde:",
+                    "border_thickness": "Grosor:",
+                    "outer_color": "Color Exterior:",
+                    "outer_thickness": "Grosor Ext.:",
+                    "export": "&nbsp;Exportar 💾&nbsp;",
+                    "download": "📥 Descargar Papercraft"
+                },
+                "controls": {
+                    "enter_hint": "¡Presiona ENTER para cargar!",
+                    "placeholder": "Nombre de Jugador, UUID, Base64 o URL...",
+                    "upload": "📁 Custom Skin"
+                },
+                "showcase": {
+                    "pixel": "¿Buscas un pixelart como este? 💎",
+                    "render": "¿Buscas un render como este? 💎",
+                    "animation": "¿Buscas una animación como esta? 💎"
+                },
+                "gallery": {
+                    "view": "¡Mira cómo se ven en la vida real! 🖼️",
+                    "close": "Cerrar ❌",
+                    "normal": "¡MODELO NORMAL!",
+                    "movable": "¡MODELO MOVIBLE!"
+                },
+                "more": { "tools": "Más herramientas para ti:" },
+                "footer": { "text": "Gracias a <a href='https://alonsoaliaga.com/donate' rel='noopener' target='_blank' style='color:var(--link-color);'>AlonsoAliaga</a> y <a href='https://google.com' target='_blank' style='color:var(--link-color);'>Gemini</a> por su duro trabajo durante el desarrollo de esta herramienta." }
+            }
+        };
+
+        function resolveLanguage() {
+            let lang = navigator.language || navigator.userLanguage || DEFAULT_LANGUAGE;
+            lang = lang.split('-')[0].toLowerCase();
+            return AVAILABLE_LANGUAGES.includes(lang) ? lang : DEFAULT_LANGUAGE;
+        }
+
+        async function loadLanguage(lang) {
+            const isLocalFile = window.location.protocol === 'file:';
+            if(!isLocalFile) {
+                try {
+                    const resp = await fetch(`lang/${lang}.json`);
+                    if(resp.ok) {
+                        const data = await resp.json();
+                        TRANSLATIONS[lang] = data; 
+                        return data;
+                    }
+                } catch(e) { /* Fallback to embedded */ }
+            }
+            return TRANSLATIONS[lang] || TRANSLATIONS[DEFAULT_LANGUAGE];
+        }
+
+        function getTranslation(key, params = {}) {
+            const data = TRANSLATIONS[currentLanguage] || TRANSLATIONS[DEFAULT_LANGUAGE];
+            const keys = key.split('.');
+            let value = data;
+            for(const k of keys) {
+                if(value && value[k]) value = value[k];
+                else return key; 
+            }
+            for(const [pKey, pVal] of Object.entries(params)) {
+                value = value.replace(`{{${pKey}}}`, pVal);
+            }
+            return value;
+        }
+
+        function applyTranslations() {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if(key.startsWith('[')) {
+                    const match = key.match(/^\[(.*?)\](.*)/);
+                    if(match) el.setAttribute(match[1], getTranslation(match[2]));
+                } else {
+                    el.innerHTML = getTranslation(key); 
+                }
+            });
+        }
+
+        async function setLanguage(lang) {
+            if(lang === 'auto') lang = resolveLanguage();
+            if(!AVAILABLE_LANGUAGES.includes(lang)) lang = DEFAULT_LANGUAGE;
+            currentLanguage = lang;
+            await loadLanguage(lang);
+            applyTranslations();
+            
+            document.querySelectorAll('.lang-flag').forEach(img => {
+                img.classList.toggle('active', img.dataset.lang === lang);
+            });
+            document.getElementById('langAutoBtn').classList.toggle('opacity-50', lang !== resolveLanguage());
+        }
+
+        function initFlags() {
+            const container = document.getElementById('flagsContainer');
+            const flags = {
+                'en': 'us',
+                'es': 'es',
+                'fr': 'fr',
+                'it': 'it',
+                'zh': 'cn',
+                'ja': 'jp',
+                'ko': 'kr',
+                'de': 'de',
+                'ar': 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Flag_of_the_Arab_League.svg/1920px-Flag_of_the_Arab_League.svg.png',
+                'ga': 'ie'
+            };
+            AVAILABLE_LANGUAGES.forEach(lang => {
+                const img = document.createElement('img');
+                if(flags[lang].startsWith("http")) img.src = flags[lang];
+                else img.src = `https://flagcdn.com/w40/${flags[lang]}.png`;
+                img.className = 'lang-flag'; 
+                img.dataset.lang = lang; 
+                img.title = lang.toUpperCase();
+                img.onclick = () => setLanguage(lang); 
+                container.appendChild(img);
+            });
+            document.getElementById('langAutoBtn').onclick = () => setLanguage('auto');
+            setLanguage('auto'); 
+        }
+        document.getElementById('viewGalleryBtn').onclick = () => openGallery();
+        document.getElementById('closeGalleryBtn').onclick = () => closeGallery();
+        function openGallery() {
+            let galleryDiv = document.getElementById("galleryDiv");
+            galleryDiv.style.display = null;
+        }
+        function closeGallery() {
+            let galleryDiv = document.getElementById("galleryDiv");
+            galleryDiv.style.display = "none";
+        }
+        // ==========================================
+        // === UTILS & LOGS =========================
+        // ==========================================
+
+        function showCustomSnackbar(msg, type = "success", title = "") {
+            const el = document.getElementById('customSnackbar');
+            const icon = document.getElementById('snackbarIcon');
+            const titleEl = document.getElementById('snackbarTitle');
+            const msgEl = document.getElementById('snackbarMsg');
+
+            el.className = 'snackbar-popup';
+            el.classList.add(`snackbar-${type}`);
+
+            if(type === 'success') { icon.textContent = "✅"; titleEl.textContent = title || "Success!"; }
+            else if(type === 'error') { icon.textContent = "⚠️"; titleEl.textContent = title || "Error!"; }
+            else { icon.textContent = "ℹ️"; titleEl.textContent = title || "Info"; }
+
+            msgEl.textContent = msg;
+            el.classList.add('show');
+            setTimeout(() => { el.classList.remove('show'); }, 4000);
+        }
+
+        function addLog(message) {
+            const time = new Date().toLocaleTimeString();
+            console.log(`[Skin Papercraft] [${time}] ${message}`);
+        }
+
+        // ==========================================
+        // === PAPERCRAFT GENERATOR CORE LOGIC ======
+        // ==========================================
+
+        const canvas = document.getElementById('renderCanvas');
+        const ctx = canvas.getContext('2d');
+        const skinInput = document.getElementById('skinInput');
+        const exportBtn = document.getElementById('exportBtn');
+        const lineStyleRadios = document.querySelectorAll('input[name="lineStyle"]');
+        const modelStyleRadios = document.querySelectorAll('input[name="modelType"]');
+        const overlayToggle = document.getElementById('overlayToggle');
+        
+        // Advanced Customization elements
+        const borderColorInput = document.getElementById('borderColorInput');
+        const borderThicknessInput = document.getElementById('borderThicknessInput');
+        const borderThicknessVal = document.getElementById('borderThicknessVal');
+        const outerBorderColorInput = document.getElementById('outerBorderColorInput');
+        const outerBorderThicknessInput = document.getElementById('outerBorderThicknessInput');
+        const outerBorderThicknessVal = document.getElementById('outerBorderThicknessVal');
+        const bgSelect = document.getElementById('bgSelect');
+
+        const nametagInput = document.getElementById('nametagInput');
+        const genericInput = document.getElementById('genericInput');
+        
+        let currentSkinImg = null;
+        let downloadedFileName = 'minecraft_papercraft.png';
+
+        // ==========================================
+        // === CONFIGURACIÓN GENERAL ================
+        // ==========================================
+
+        // Diccionario Configurable de Fondos (Aplicable a ambos modos)
+        const CONFIG_FONDOS = {
+            "default": { nombre: "Dimensional Chaos 🪅", "url-normal": "https://i.imgur.com/90ye7fW.jpeg", "url-movible": "https://i.imgur.com/gjz3NjF.jpeg" },
+            "default": { nombre: "Dimensional Chaos 🪅", "url-normal": "", "url-movible": "" },
+            "galaxy": { nombre: "Galaxy 🌌", "url-normal": "https://i.imgur.com/BsMBvkx.jpeg", "url-movible": "https://i.imgur.com/5xBl8FZ.jpeg" },
+            "christmas": { nombre: "Christmas 🎄", "url-normal": "https://i.imgur.com/CWYFOxh.jpeg", "url-movible": "https://i.imgur.com/IUKpOmp.jpeg" },
+            "survival-games": { nombre: "Survival Games 🏹", "url-normal": "https://i.imgur.com/zixaLdm.jpeg", "url-movible": "https://i.imgur.com/4zgOvrs.jpeg" },
+            "moon": { nombre: "Moon 🌑", "url-normal": "https://i.imgur.com/dBopbx6.png", "url-movible": "https://i.imgur.com/VkvYhGx.png" },
+            "geometry-dash": { nombre: "Geometry Dash 👺", "url-normal": "https://i.imgur.com/0ZKs7Wt.jpeg", "url-movible": "https://i.imgur.com/FL6zC6C.jpeg" },
+            "village": { nombre: "Village ⛺", "url-normal": "https://i.imgur.com/T1BLaHH.jpeg", "url-movible": "https://i.imgur.com/0RbWrC5.jpeg" },
+            "blueprint": { nombre: "Blueprint 🔷", "url-normal": "https://i.imgur.com/fyg0R6L.png", "url-movible": "https://i.imgur.com/o8UwAOi.png" },
+            "transparent": { nombre: "Transparent 🪞", "url-normal": "https://i.imgur.com/4pZUtFc.png", "url-movible": "https://i.imgur.com/n5WcvV4.png" }
+        };
+
+        let bgImageNormalObj = null;
+        let bgImageMovibleObj = null;
+        
+        // Color para rellenar la solapa central de los brazos 
+        let colorSolapaBrazos = "#fc0335"; 
+
+        // Configuración de posiciones X e Y absolutas en el canvas (PIXELES REALES DESDE 0,0)
+        const CONFIG_POSITIONS_NORMAL = {
+            cabeza: { x: 280, y: 50 },
+            torso: { x: 2100, y: 110 },
+            brazoDer: { x: 130, y: 1075 },
+            brazoIzq: { x: 880, y: 1075 },
+            piernaDer: { x: 1800, y: 1000 },
+            piernaIzq: { x: 2550, y: 1000 },
+            nametag: { x: 910, y: 2010 } // x = centro, y = posición vertical
+        };
+
+        const CONFIG_POSITIONS_MOVIBLE = {
+            cabeza: { x: 120, y: 50 },
+            torso: { x: 1600, y: 60 },
+            brazoDer: { x: 2325, y: 875 },
+            brazoIzq: { x: 2725, y: 1600 },
+            piernaDer: { x: 680, y: 1225 }, 
+            piernaIzq: { x: 1425, y: 1225 }, 
+            pinCuello: { x: 2750, y: 60 }, 
+            pinBrazoDer: { x: 2750, y: 500 }, 
+            pinBrazoIzq: { x: 3100, y: 500 }, 
+            pinPelvis: { x: 120, y: 1300 }, 
+            nametag: { x: 890, y: 2010 } 
+        };
+
+        // --- Layout Sizes and Position ---
+        const scaleNormal = 43; // Escala independiente para el modelo Normal
+        const scaleMovible = 42; // Escala independiente para el modelo Movible (Ajustable)
+        let scale = scaleNormal; // Variable dinámica que se actualizará al renderizar
+
+        const layoutNormal = [
+            { name: 'Cabeza', w: 8, d: 8, h: 8, base: [0, 0], overlay: [32, 0], dest: [CONFIG_POSITIONS_NORMAL.cabeza.x, CONFIG_POSITIONS_NORMAL.cabeza.y], omitLeft: false, omitRight: true, omitTop: true, omitBottom: true },
+            { name: 'Torso', w: 8, d: 4, h: 12, base: [16, 16], overlay: [16, 32], dest: [CONFIG_POSITIONS_NORMAL.torso.x, CONFIG_POSITIONS_NORMAL.torso.y], omitLeft: false, omitRight: true, omitTop: true, omitBottom: true },
+            { name: 'Brazo Der.', w: 4, d: 4, h: 12, base: [40, 16], overlay: [40, 32], dest: [CONFIG_POSITIONS_NORMAL.brazoDer.x, CONFIG_POSITIONS_NORMAL.brazoDer.y], omitLeft: false, omitRight: true, omitTop: true, omitBottom: true },
+            { name: 'Brazo Izq.', w: 4, d: 4, h: 12, base: [32, 48], overlay: [48, 48], dest: [CONFIG_POSITIONS_NORMAL.brazoIzq.x, CONFIG_POSITIONS_NORMAL.brazoIzq.y], omitLeft: true, omitRight: false, omitTop: true, omitBottom: true },
+            { name: 'Pierna Der.', w: 4, d: 4, h: 12, base: [0, 16], overlay: [0, 32], dest: [CONFIG_POSITIONS_NORMAL.piernaDer.x, CONFIG_POSITIONS_NORMAL.piernaDer.y], omitLeft: false, omitRight: true, omitTop: true, omitBottom: true },
+            { name: 'Pierna Izq.', w: 4, d: 4, h: 12, base: [16, 48], overlay: [0, 48], dest: [CONFIG_POSITIONS_NORMAL.piernaIzq.x, CONFIG_POSITIONS_NORMAL.piernaIzq.y], omitLeft: true, omitRight: false, omitTop: true, omitBottom: true }
+        ];
+
+        // Layout para modelo Movible (Piezas separadas y pines)
+        const layoutMovible = [
+            { type: 'head', dest: [CONFIG_POSITIONS_MOVIBLE.cabeza.x, CONFIG_POSITIONS_MOVIBLE.cabeza.y], w: 8, d: 8, h: 8, base: [0, 0], overlay: [32, 0], omitLeft: false, omitRight: true, omitTop: true, omitBottom: true },
+            { type: 'body', dest: [CONFIG_POSITIONS_MOVIBLE.torso.x, CONFIG_POSITIONS_MOVIBLE.torso.y], w: 8, d: 4, h: 12, base: [16, 16], overlay: [16, 32] }, 
+            { type: 'arm', name: 'Right Arm', dest: [CONFIG_POSITIONS_MOVIBLE.brazoDer.x, CONFIG_POSITIONS_MOVIBLE.brazoDer.y], w: 4, d: 4, h: 12, base: [40, 16], overlay: [40, 32] },
+            { type: 'arm', name: 'Left Arm', dest: [CONFIG_POSITIONS_MOVIBLE.brazoIzq.x, CONFIG_POSITIONS_MOVIBLE.brazoIzq.y], w: 4, d: 4, h: 12, base: [32, 48], overlay: [48, 48] },
+            { type: 'leg', name: 'Right Leg', dest: [CONFIG_POSITIONS_MOVIBLE.piernaDer.x, CONFIG_POSITIONS_MOVIBLE.piernaDer.y], w: 4, d: 4, h: 12, base: [0, 16], overlay: [0, 32] },
+            { type: 'leg', name: 'Left Leg', dest: [CONFIG_POSITIONS_MOVIBLE.piernaIzq.x, CONFIG_POSITIONS_MOVIBLE.piernaIzq.y], w: 4, d: 4, h: 12, base: [16, 48], overlay: [0, 48] },
+            { type: 'neck_pin', dest: [CONFIG_POSITIONS_MOVIBLE.pinCuello.x, CONFIG_POSITIONS_MOVIBLE.pinCuello.y] },
+            { type: 'arm_pin', side: 'right', dest: [CONFIG_POSITIONS_MOVIBLE.pinBrazoDer.x, CONFIG_POSITIONS_MOVIBLE.pinBrazoDer.y] },
+            { type: 'arm_pin', side: 'left', dest: [CONFIG_POSITIONS_MOVIBLE.pinBrazoIzq.x, CONFIG_POSITIONS_MOVIBLE.pinBrazoIzq.y] },
+            { type: 'pelvis_pin', dest: [CONFIG_POSITIONS_MOVIBLE.pinPelvis.x, CONFIG_POSITIONS_MOVIBLE.pinPelvis.y] }
+        ];
+
+        function getFaces(baseX, baseY, w, d, h) {
+            return [
+                { src: [baseX + d, baseY, w, d], localDest: [d, 0, w, d] },             
+                { src: [baseX + d + w, baseY, w, d], localDest: [d, d + h, w, d] },     
+                { src: [baseX, baseY + d, d, h], localDest: [0, d, d, h] },             
+                { src: [baseX + d, baseY + d, w, h], localDest: [d, d, w, h] },         
+                { src: [baseX + d + w, baseY + d, d, h], localDest: [d + w, d, d, h] }, 
+                { src: [baseX + d + w + d, baseY + d, w, h], localDest: [d + w + d, d, w, h] } 
+            ];
+        }
+
+        // Función para poblar e inicializar el Selector de Fondos
+        function initBackgrounds() {
+            for (const [key, bgData] of Object.entries(CONFIG_FONDOS)) {
+                if(key == "test" && window && window.location.href.includes("alonsoaliaga")) continue;
+                const opt = document.createElement('option');
+                opt.value = key;
+                opt.textContent = bgData.nombre;
+                bgSelect.appendChild(opt);
+            }
+            // Selecciona default y lo carga
+            bgSelect.value = "default";
+            loadBackground("default");
+        }
+
+        // Cargar imagen de fondo para Normal y Movible y re-renderizar
+        function loadBackground(key) {
+            const bgData = CONFIG_FONDOS[key];
+            if(!bgData) return;
+
+            // Cargar para modo Normal
+            if(bgData["url-normal"]) {
+                bgImageNormalObj = new Image();
+                bgImageNormalObj.crossOrigin = "anonymous";
+                bgImageNormalObj.onload = () => {
+                    if(document.querySelector('input[name="modelType"]:checked').value === 'normal') renderAll();
+                };
+                bgImageNormalObj.src = bgData["url-normal"];
+            } else {
+                bgImageNormalObj = null;
+                if(document.querySelector('input[name="modelType"]:checked').value === 'normal') renderAll();
+            }
+
+            // Cargar para modo Movible
+            if(bgData["url-movible"]) {
+                bgImageMovibleObj = new Image();
+                bgImageMovibleObj.crossOrigin = "anonymous";
+                bgImageMovibleObj.onload = () => {
+                    if(document.querySelector('input[name="modelType"]:checked').value === 'movible') renderAll();
+                };
+                bgImageMovibleObj.src = bgData["url-movible"];
+            } else {
+                bgImageMovibleObj = null;
+                if(document.querySelector('input[name="modelType"]:checked').value === 'movible') renderAll();
+            }
+        }
+
+        bgSelect.addEventListener('change', (e) => {
+            loadBackground(e.target.value);
+        });
+
+        // Eventos para el Advanced de Borde Configurable
+        borderColorInput.addEventListener('input', renderAll);
+        borderThicknessInput.addEventListener('input', (e) => {
+            borderThicknessVal.textContent = e.target.value;
+            renderAll();
+        });
+        outerBorderColorInput.addEventListener('input', renderAll);
+        outerBorderThicknessInput.addEventListener('input', (e) => {
+            outerBorderThicknessVal.textContent = e.target.value;
+            renderAll();
+        });
+
+        // Trazado base Universal Inteligente (Usado para modelo normal y para la cabeza del modelo Movible)
+        function buildSmartOutlinePath(ctx, part) {
+            const x = part.dest[0], y = part.dest[1]; // Coordenadas absolutas X/Y
+            const w = part.w * scale, d = part.d * scale, h = part.h * scale;
+            const t = 1.875 * scale, c = 0.75 * scale; // Solapas 3/4 de su altura anterior
+
+            ctx.beginPath();
+            
+            // Left Face left flap
+            ctx.moveTo(x, y + d + h); 
+            if (!part.omitLeft) { ctx.lineTo(x - t, y + d + h - c); ctx.lineTo(x - t, y + d + c); }
+            ctx.lineTo(x, y + d); 
+            
+            // Left Face top flap
+            ctx.lineTo(x + c, y + d - t); ctx.lineTo(x + d - c, y + d - t); ctx.lineTo(x + d, y + d);
+            
+            // Top Face top flap
+            ctx.lineTo(x + d, y);
+            if (!part.omitTop) { ctx.lineTo(x + d + c, y - t); ctx.lineTo(x + d + w - c, y - t); }
+            ctx.lineTo(x + d + w, y); ctx.lineTo(x + d + w, y + d);
+            
+            // Right Face top flap
+            ctx.lineTo(x + d + w + c, y + d - t); ctx.lineTo(x + d + w + d - c, y + d - t); ctx.lineTo(x + d + w + d, y + d); 
+            
+            // Back Face top flap
+            ctx.lineTo(x + d + w + d + c, y + d - t); ctx.lineTo(x + d + w + d + w - c, y + d - t); ctx.lineTo(x + d + w + d + w, y + d);
+            
+            // Back Face right flap
+            if (!part.omitRight) { ctx.lineTo(x + d + w + d + w + t, y + d + c); ctx.lineTo(x + d + w + d + w + t, y + d + h - c); }
+            ctx.lineTo(x + d + w + d + w, y + d + h); 
+            
+            // Back Face bottom flap
+            ctx.lineTo(x + d + w + d + w - c, y + d + h + t); ctx.lineTo(x + d + w + d + c, y + d + h + t); ctx.lineTo(x + d + w + d, y + d + h);
+            
+            // Right Face bottom flap
+            ctx.lineTo(x + d + w + d - c, y + d + h + t); ctx.lineTo(x + d + w + c, y + d + h + t); ctx.lineTo(x + d + w, y + d + h); 
+            
+            // Bottom Face bottom flap
+            ctx.lineTo(x + d + w, y + d + h + d);
+            if (!part.omitBottom) { ctx.lineTo(x + d + w - c, y + d + h + d + t); ctx.lineTo(x + d + c, y + d + h + d + t); }
+            ctx.lineTo(x + d, y + d + h + d); ctx.lineTo(x + d, y + d + h);
+            
+            // Left Face bottom flap
+            ctx.lineTo(x + d - c, y + d + h + t); ctx.lineTo(x + c, y + d + h + t); ctx.lineTo(x, y + d + h);
+            
+            ctx.closePath();
+        }
+
+        // Trazado de solapa central superior (Específico para los brazos)
+        function drawMiddleFlap(ctx, part, color) {
+            const x = part.dest[0], y = part.dest[1];
+            const w = part.w * scale, d = part.d * scale;
+            const t = 1.875 * scale, c = 0.75 * scale;
+            
+            ctx.beginPath();
+            ctx.moveTo(x + d + w, y + d);
+            ctx.lineTo(x + d + w + c, y + d - t);
+            ctx.lineTo(x + d + w + d - c, y + d - t);
+            ctx.lineTo(x + d + w + d, y + d);
+            ctx.closePath();
+            
+            ctx.fillStyle = color;
+            ctx.fill();
+        }
+
+        // ==========================================
+        // === NUEVAS FUNCIONES: NORMAL ESPEJO ======
+        // ==========================================
+
+        function buildNormalLeftOutline(ctx, part) {
+            const x = part.dest[0], y = part.dest[1];
+            const w = part.w * scale, d = part.d * scale, h = part.h * scale;
+            const t = 1.875 * scale, c = 0.75 * scale;
+
+            ctx.beginPath();
+            // Box 1 (Espalda, ancho 'w') left flap
+            ctx.moveTo(x, y + d + h); 
+            if (!part.omitLeft) { ctx.lineTo(x - t, y + d + h - c); ctx.lineTo(x - t, y + d + c); }
+            ctx.lineTo(x, y + d); 
+            
+            // Box 1 (Espalda) top flap
+            ctx.lineTo(x + c, y + d - t); ctx.lineTo(x + w - c, y + d - t); ctx.lineTo(x + w, y + d);
+            
+            // Box 2 (Interior, ancho 'd') top flap
+            ctx.lineTo(x + w + c, y + d - t); ctx.lineTo(x + w + d - c, y + d - t); ctx.lineTo(x + w + d, y + d);
+            
+            // Box 3 (Frente, ancho 'w') Top Face attached (LA PARTE GRANDE)
+            ctx.lineTo(x + w + d, y);
+            if (!part.omitTop) { ctx.lineTo(x + w + d + c, y - t); ctx.lineTo(x + w + d + w - c, y - t); }
+            ctx.lineTo(x + w + d + w, y); ctx.lineTo(x + w + d + w, y + d);
+            
+            // Box 4 (Exterior, ancho 'd') top flap
+            ctx.lineTo(x + w + d + w + c, y + d - t); ctx.lineTo(x + w + d + w + d - c, y + d - t); ctx.lineTo(x + w + d + w + d, y + d);
+            
+            // Box 4 (Exterior) right flap
+            if (!part.omitRight) { ctx.lineTo(x + w + d + w + d + t, y + d + c); ctx.lineTo(x + w + d + w + d + t, y + d + h - c); }
+            ctx.lineTo(x + w + d + w + d, y + d + h); 
+            
+            // Box 4 (Exterior) bottom flap
+            ctx.lineTo(x + w + d + w + d - c, y + d + h + t); ctx.lineTo(x + w + d + w + c, y + d + h + t); ctx.lineTo(x + w + d + w, y + d + h);
+            
+            // Box 3 (Frente) Bottom Face attached (LA PARTE GRANDE)
+            ctx.lineTo(x + w + d + w, y + d + h + d);
+            if (!part.omitBottom) { ctx.lineTo(x + w + d + w - c, y + d + h + d + t); ctx.lineTo(x + w + d + c, y + d + h + d + t); }
+            ctx.lineTo(x + w + d, y + d + h + d); ctx.lineTo(x + w + d, y + d + h);
+            
+            // Box 2 (Interior) bottom flap
+            ctx.lineTo(x + w + d - c, y + d + h + t); ctx.lineTo(x + w + c, y + d + h + t); ctx.lineTo(x + w, y + d + h); 
+            
+            // Box 1 (Espalda) bottom flap
+            ctx.lineTo(x + w - c, y + d + h + t); ctx.lineTo(x + c, y + d + h + t); ctx.lineTo(x, y + d + h);
+            
+            ctx.closePath();
+        }
+
+        function drawMiddleFlapLeft(ctx, part, color) {
+            const x = part.dest[0], y = part.dest[1];
+            const w = part.w * scale, d = part.d * scale;
+            const t = 1.875 * scale, c = 0.75 * scale;
+            
+            ctx.beginPath();
+            // Nace en la caja 2 (Interior), ancho 'd'
+            ctx.moveTo(x + w, y + d);
+            ctx.lineTo(x + w + c, y + d - t);
+            ctx.lineTo(x + w + d - c, y + d - t);
+            ctx.lineTo(x + w + d, y + d);
+            ctx.closePath();
+            
+            ctx.fillStyle = color;
+            ctx.fill();
+        }
+
+        function drawNormalLeftFoldLines(ctx, part) {
+            const style = document.querySelector('input[name="lineStyle"]:checked').value;
+            const bColor = borderColorInput.value;
+            const x = part.dest[0], y = part.dest[1];
+            const w = part.w * scale, d = part.d * scale, h = part.h * scale;
+
+            ctx.beginPath();
+            
+            // Vertical internal lines
+            if (!part.omitLeft) { ctx.moveTo(x, y + d); ctx.lineTo(x, y + d + h); }
+            ctx.moveTo(x + w, y + d); ctx.lineTo(x + w, y + d + h);
+            ctx.moveTo(x + w + d, y + d); ctx.lineTo(x + w + d, y + d + h);
+            ctx.moveTo(x + w + d + w, y + d); ctx.lineTo(x + w + d + w, y + d + h);
+            if (!part.omitRight) { ctx.moveTo(x + w + d + w + d, y + d); ctx.lineTo(x + w + d + w + d, y + d + h); }
+
+            // Horizontal internal lines
+            ctx.moveTo(x, y + d); ctx.lineTo(x + w + d + w + d, y + d);
+            if (!part.omitTop) { ctx.moveTo(x + w + d, y); ctx.lineTo(x + w + d + w, y); }
+            ctx.moveTo(x, y + d + h); ctx.lineTo(x + w + d + w + d, y + d + h);
+            if (!part.omitBottom) { ctx.moveTo(x + w + d, y + d + h + d); ctx.lineTo(x + w + d + w, y + d + h + d); }
+
+            if (style === 'none') return; 
+            if (style === 'dotted') { ctx.strokeStyle = bColor; ctx.lineWidth = 1.5; ctx.setLineDash([4, 4]); } 
+            else if (style === 'thin') { ctx.strokeStyle = bColor; ctx.lineWidth = 1; ctx.globalAlpha = 0.6; ctx.setLineDash([]); }
+            ctx.stroke(); ctx.setLineDash([]); ctx.globalAlpha = 1.0; 
+        }
+
+        function getFacesLeft(baseX, baseY, w, d, h) {
+            return [
+                { src: [baseX + d, baseY, w, d], localDest: [w + d, 0, w, d] },             // Top Face (Frente) en Box 3
+                { src: [baseX + d + w, baseY, w, d], localDest: [w + d, d + h, w, d] },     // Bottom Face (Frente) en Box 3
+                { src: [baseX + d + w + d, baseY + d, w, h], localDest: [0, d, w, h] },     // Espalda en Box 1
+                { src: [baseX, baseY + d, d, h], localDest: [w, d, d, h] },                 // Interior en Box 2
+                { src: [baseX + d, baseY + d, w, h], localDest: [w + d, d, w, h] },         // Frente en Box 3
+                { src: [baseX + d + w, baseY + d, d, h], localDest: [w + d + w, d, d, h] }  // Exterior en Box 4
+            ];
+        }
+
+        // ==========================================
+        // === LÓGICA DE LÍNEAS REHECHA (PURA) ======
+        // ==========================================
+
+        // Líneas de doblez base universal (Modelo Normal y Cabeza Movible)
+        function drawSmartFoldLines(ctx, part) {
+            const style = document.querySelector('input[name="lineStyle"]:checked').value;
+            const bColor = borderColorInput.value;
+            const bThick = parseFloat(borderThicknessInput.value);
+
+            const x = part.dest[0], y = part.dest[1];
+            const w = part.w * scale, d = part.d * scale, h = part.h * scale;
+
+            ctx.beginPath();
+            
+            // --- LÍNEAS VERTICALES INTERNAS ---
+            // 1. Doblez de la solapa izquierda (si existe)
+            if (!part.omitLeft) { ctx.moveTo(x, y + d); ctx.lineTo(x, y + d + h); }
+            // 2. Doblez entre Cara 1 (Izq) y Cara 2 (Frente)
+            ctx.moveTo(x + d, y + d); ctx.lineTo(x + d, y + d + h);
+            // 3. Doblez entre Cara 2 (Frente) y Cara 3 (Der)
+            ctx.moveTo(x + d + w, y + d); ctx.lineTo(x + d + w, y + d + h);
+            // 4. Doblez entre Cara 3 (Der) y Cara 4 (Atrás)
+            ctx.moveTo(x + d + w + d, y + d); ctx.lineTo(x + d + w + d, y + d + h);
+            // 5. Doblez de la solapa derecha (si existe)
+            if (!part.omitRight) { ctx.moveTo(x + d + w + d + w, y + d); ctx.lineTo(x + d + w + d + w, y + d + h); }
+
+            // --- LÍNEAS HORIZONTALES INTERNAS (SUPERIORES) ---
+            // Línea base superior (Atraviesa todas las caras principales)
+            ctx.moveTo(x, y + d); ctx.lineTo(x + d + w + d + w, y + d);
+            // Doblez de la solapa superior del Top Face (si existe)
+            if (!part.omitTop) { ctx.moveTo(x + d, y); ctx.lineTo(x + d + w, y); }
+
+            // --- LÍNEAS HORIZONTALES INTERNAS (INFERIORES) ---
+            // Línea base inferior (Atraviesa todas las caras principales)
+            ctx.moveTo(x, y + d + h); ctx.lineTo(x + d + w + d + w, y + d + h);
+            // Doblez de la solapa inferior del Bottom Face (si existe)
+            if (!part.omitBottom) { ctx.moveTo(x + d, y + d + h + d); ctx.lineTo(x + d + w, y + d + h + d); }
+
+            // Aplicar estilos
+            if (style === 'none') return; 
+
+            if (style === 'dotted') {
+                ctx.strokeStyle = bColor; ctx.lineWidth = 1.5; ctx.setLineDash([4, 4]);
+            } else if (style === 'thin') {
+                ctx.strokeStyle = bColor; ctx.lineWidth = 1; ctx.globalAlpha = 0.6; ctx.setLineDash([]);
+            }
+            ctx.stroke(); ctx.setLineDash([]); ctx.globalAlpha = 1.0; 
+        }
+
+        // ==========================================
+        // === LOGICA: MODELO MOVIBLE (NUEVO) =======
+        // ==========================================
+
+        function buildMovibleBodyOutline(ctx, x, y, w, d, h) {
+            const t = 1.875 * scale, c = 0.75 * scale; 
+            const r = d / 2;
+
+            ctx.beginPath();
+            ctx.moveTo(x, y + d + h);
+            
+            // Left flap
+            ctx.lineTo(x - t, y + d + h - c); ctx.lineTo(x - t, y + d + c); ctx.lineTo(x, y + d);
+            
+            // Face 1 top flap
+            ctx.lineTo(x + c, y + d - t); ctx.lineTo(x + d - c, y + d - t); ctx.lineTo(x + d, y + d);
+            
+            // Top Face (over Face 2 / Front)
+            ctx.lineTo(x + d, y); ctx.lineTo(x + d + w, y); ctx.lineTo(x + d + w, y + d);
+            
+            // Face 3 top flap
+            ctx.lineTo(x + d + w + c, y + d - t); ctx.lineTo(x + d + w + d - c, y + d - t); ctx.lineTo(x + d + w + d, y + d);
+            
+            // Face 4 top flap
+            ctx.lineTo(x + d + w + d + c, y + d - t); ctx.lineTo(x + d + w + d + w - c, y + d - t); ctx.lineTo(x + d + w + d + w, y + d);
+            
+            // Right edge
+            ctx.lineTo(x + d + w + d + w, y + d + h);
+            
+            // --- Bottom edge (Right to Left) ---
+            ctx.lineTo(x + d + w + d, y + d + h); // Face 4 bottom
+            ctx.arc(x + d + w + d/2, y + d + h, r, 0, Math.PI, false); // Face 3 semicircle
+            ctx.lineTo(x + d, y + d + h); // Face 2 bottom
+            ctx.arc(x + d/2, y + d + h, r, 0, Math.PI, false); // Face 1 semicircle
+            
+            ctx.closePath();
+        }
+
+        function drawMovibleBodyFolds(ctx, x, y, w, d, h) {
+            const style = document.querySelector('input[name="lineStyle"]:checked').value;
+            const bColor = borderColorInput.value;
+
+            if (style === 'none') return; 
+
+            ctx.beginPath();
+            // --- LÍNEAS VERTICALES INTERNAS ---
+            ctx.moveTo(x, y + d); ctx.lineTo(x, y + d + h); // Doblez solapa izq
+            ctx.moveTo(x + d, y + d); ctx.lineTo(x + d, y + d + h); // F1-F2
+            ctx.moveTo(x + d + w, y + d); ctx.lineTo(x + d + w, y + d + h); // F2-F3
+            ctx.moveTo(x + d + w + d, y + d); ctx.lineTo(x + d + w + d, y + d + h); // F3-F4
+            
+            // --- LÍNEAS HORIZONTALES INTERNAS ---
+            ctx.moveTo(x, y + d); ctx.lineTo(x + d + w + d + w, y + d); // Base superior completa
+            ctx.moveTo(x + d, y); ctx.lineTo(x + d + w, y); // Solapa del Top Face
+
+            if (style === 'dotted') { ctx.strokeStyle = bColor; ctx.lineWidth = 1.5; ctx.setLineDash([4, 4]); } 
+            else { ctx.strokeStyle = bColor; ctx.lineWidth = 1; ctx.globalAlpha = 0.6; ctx.setLineDash([]); }
+            ctx.stroke(); ctx.setLineDash([]); ctx.globalAlpha = 1.0;
+        }
+
+        function buildMovibleArmOutline(ctx, x, y, w, d, h, isLeft) {
+            const t = 1.875 * scale, c = 0.75 * scale; 
+
+            ctx.beginPath();
+            if (isLeft) {
+                // EFECTO ESPEJO: F4(w), F1(d), F2(w), F3(d)
+                ctx.moveTo(x, y + d + h);
+                // Borde izquierdo liso
+                ctx.lineTo(x, y + d);
+                
+                // Box 1 (F4) Top flap
+                ctx.lineTo(x + c, y + d - t); ctx.lineTo(x + w - c, y + d - t); ctx.lineTo(x + w, y + d);
+                // Box 2 (F1) Top flap
+                ctx.lineTo(x + w + c, y + d - t); ctx.lineTo(x + w + d - c, y + d - t); ctx.lineTo(x + w + d, y + d);
+                // Box 3 (F2) Top Face (Parte larga alineada)
+                ctx.lineTo(x + w + d, y); ctx.lineTo(x + w + d + w, y); ctx.lineTo(x + w + d + w, y + d);
+                // Box 4 (F3) Top flap
+                ctx.lineTo(x + w + d + w + c, y + d - t); ctx.lineTo(x + w + d + w + d - c, y + d - t); ctx.lineTo(x + w + d + w + d, y + d);
+                
+                // Box 4 Right flap (Solapa a la derecha para efecto espejo)
+                ctx.lineTo(x + w + d + w + d + t, y + d + c);
+                ctx.lineTo(x + w + d + w + d + t, y + d + h - c);
+                ctx.lineTo(x + w + d + w + d, y + d + h);
+                
+                // BORDES INFERIORES
+                // Box 4 (F3) Bottom flap
+                ctx.lineTo(x + w + d + w + d - c, y + d + h + t); ctx.lineTo(x + w + d + w + c, y + d + h + t); ctx.lineTo(x + w + d + w, y + d + h);
+                // Box 3 (F2) Bottom Face (Parte larga inferior)
+                ctx.lineTo(x + w + d + w, y + d + h + d); ctx.lineTo(x + w + d, y + d + h + d); ctx.lineTo(x + w + d, y + d + h);
+                // Box 2 (F1) Bottom flap
+                ctx.lineTo(x + w + d - c, y + d + h + t); ctx.lineTo(x + w + c, y + d + h + t); ctx.lineTo(x + w, y + d + h);
+                // Box 1 (F4) Bottom flap
+                ctx.lineTo(x + w - c, y + d + h + t); ctx.lineTo(x + c, y + d + h + t); ctx.lineTo(x, y + d + h);
+            } else {
+                // NORMAL: F1(d), F2(w), F3(d), F4(w)
+                ctx.moveTo(x, y + d + h);
+                // Box 1 (F1) Left flap
+                ctx.lineTo(x - t, y + d + h - c); ctx.lineTo(x - t, y + d + c); ctx.lineTo(x, y + d);
+                
+                // Box 1 (F1) Top flap
+                ctx.lineTo(x + c, y + d - t); ctx.lineTo(x + d - c, y + d - t); ctx.lineTo(x + d, y + d);
+                // Box 2 (F2) Top Face (Parte larga alineada)
+                ctx.lineTo(x + d, y); ctx.lineTo(x + d + w, y); ctx.lineTo(x + d + w, y + d);
+                // Box 3 (F3) Top flap
+                ctx.lineTo(x + d + w + c, y + d - t); ctx.lineTo(x + d + w + d - c, y + d - t); ctx.lineTo(x + d + w + d, y + d);
+                // Box 4 (F4) Top flap
+                ctx.lineTo(x + d + w + d + c, y + d - t); ctx.lineTo(x + d + w + d + w - c, y + d - t); ctx.lineTo(x + d + w + d + w, y + d);
+                
+                // Box 4 Right edge (liso)
+                ctx.lineTo(x + d + w + d + w, y + d + h);
+                
+                // BORDES INFERIORES
+                // Box 4 (F4) Bottom flap
+                ctx.lineTo(x + d + w + d + w - c, y + d + h + t); ctx.lineTo(x + d + w + d + c, y + d + h + t); ctx.lineTo(x + d + w + d, y + d + h);
+                // Box 3 (F3) Bottom flap
+                ctx.lineTo(x + d + w + d - c, y + d + h + t); ctx.lineTo(x + d + w + c, y + d + h + t); ctx.lineTo(x + d + w, y + d + h);
+                // Box 2 (F2) Bottom Face (Parte larga inferior)
+                ctx.lineTo(x + d + w, y + d + h + d); ctx.lineTo(x + d, y + d + h + d); ctx.lineTo(x + d, y + d + h);
+                // Box 1 (F1) Bottom flap
+                ctx.lineTo(x + d - c, y + d + h + t); ctx.lineTo(x + c, y + d + h + t); ctx.lineTo(x, y + d + h);
+            }
+            ctx.closePath();
+        }
+
+        function drawMovibleArmFolds(ctx, x, y, w, d, h, isLeft) {
+            const style = document.querySelector('input[name="lineStyle"]:checked').value;
+            const bColor = borderColorInput.value;
+
+            if (style === 'none') return; 
+
+            ctx.beginPath();
+            if (isLeft) {
+                // Espejo: Líneas verticales
+                ctx.moveTo(x + w, y + d); ctx.lineTo(x + w, y + d + h); 
+                ctx.moveTo(x + w + d, y + d); ctx.lineTo(x + w + d, y + d + h); 
+                ctx.moveTo(x + w + d + w, y + d); ctx.lineTo(x + w + d + w, y + d + h); 
+                ctx.moveTo(x + w + d + w + d, y + d); ctx.lineTo(x + w + d + w + d, y + d + h); // Doblez solapa derecha
+                
+                // Base superior e inferior
+                ctx.moveTo(x, y + d); ctx.lineTo(x + w + d + w + d, y + d);
+                ctx.moveTo(x, y + d + h); ctx.lineTo(x + w + d + w + d, y + d + h);
+            } else {
+                // Normal: Líneas verticales
+                ctx.moveTo(x, y + d); ctx.lineTo(x, y + d + h); // Doblez solapa izq
+                ctx.moveTo(x + d, y + d); ctx.lineTo(x + d, y + d + h); 
+                ctx.moveTo(x + d + w, y + d); ctx.lineTo(x + d + w, y + d + h); 
+                ctx.moveTo(x + d + w + d, y + d); ctx.lineTo(x + d + w + d, y + d + h); 
+                
+                // Base superior e inferior
+                ctx.moveTo(x, y + d); ctx.lineTo(x + d + w + d + w, y + d);
+                ctx.moveTo(x, y + d + h); ctx.lineTo(x + d + w + d + w, y + d + h);
+            }
+
+            if (style === 'dotted') { ctx.strokeStyle = bColor; ctx.lineWidth = 1.5; ctx.setLineDash([4, 4]); } 
+            else { ctx.strokeStyle = bColor; ctx.lineWidth = 1; ctx.globalAlpha = 0.6; ctx.setLineDash([]); }
+            ctx.stroke(); ctx.setLineDash([]); ctx.globalAlpha = 1.0;
+        }
+
+        function buildMovibleLegOutline(ctx, x, y, w, d, h, isLeft) {
+            const r = d / 2; // 2 * scale
+            const t = 1.875 * scale, c = 0.75 * scale; 
+            const extH = Math.PI * 2.6 * scale; // Pelvis wrap length
+            const extY = y - extH;
+            const extInset = 0.5 * scale; // Extensión delgada para que no choquen ambas piernas
+
+            ctx.beginPath();
+            if (isLeft) {
+                // EFECTO ESPEJO: F4(w), F1(d), F2(w), F3(d)
+                ctx.moveTo(x, y + h);
+                // Borde izquierdo liso
+                ctx.lineTo(x, y);
+                
+                // Box 1 (F4) Top edge
+                ctx.lineTo(x + w, y);
+                // Box 2 (F1) Semicircle Cutout
+                ctx.arc(x + w + d/2, y, r, Math.PI, 0, true);
+                
+                // Box 3 (F2) Extension (Alineada con la planta del pie)
+                ctx.lineTo(x + w + d + extInset, y);
+                ctx.lineTo(x + w + d + extInset, extY + t);
+                ctx.lineTo(x + w + d + extInset + c, extY);
+                ctx.lineTo(x + w + d + w - extInset - c, extY);
+                ctx.lineTo(x + w + d + w - extInset, extY + t);
+                ctx.lineTo(x + w + d + w - extInset, y);
+                ctx.lineTo(x + w + d + w, y);
+                
+                // Box 4 (F3) Semicircle Cutout
+                ctx.arc(x + w + d + w + d/2, y, r, Math.PI, 0, true);
+                
+                // Box 4 Right flap (Espejo perfecto)
+                ctx.lineTo(x + w + d + w + d + t, y + c);
+                ctx.lineTo(x + w + d + w + d + t, y + h - c);
+                ctx.lineTo(x + w + d + w + d, y + h);
+
+                // --- BORDES INFERIORES ---
+                // Box 4 (F3) Bottom flap
+                ctx.lineTo(x + w + d + w + d - c, y + h + t); ctx.lineTo(x + w + d + w + c, y + h + t); ctx.lineTo(x + w + d + w, y + h);
+                // Box 3 (F2) Bottom face ONLY (Alineada con la extensión. Solapa eliminada)
+                ctx.lineTo(x + w + d + w, y + h + d); ctx.lineTo(x + w + d, y + h + d); ctx.lineTo(x + w + d, y + h);
+                // Box 2 (F1) Bottom flap
+                ctx.lineTo(x + w + d - c, y + h + t); ctx.lineTo(x + w + c, y + h + t); ctx.lineTo(x + w, y + h);
+                // Box 1 (F4) Bottom flap
+                ctx.lineTo(x + w - c, y + h + t); ctx.lineTo(x + c, y + h + t); ctx.lineTo(x, y + h);
+            } else {
+                // NORMAL: F1(d), F2(w), F3(d), F4(w)
+                ctx.moveTo(x, y + h);
+                // Box 1 (F1) Left flap
+                ctx.lineTo(x - t, y + h - c); ctx.lineTo(x - t, y + c); ctx.lineTo(x, y);
+                
+                // Box 1 (F1) Semicircle Cutout
+                ctx.arc(x + d/2, y, r, Math.PI, 0, true);
+                
+                // Box 2 (F2) Extension (Alineada con la planta del pie)
+                ctx.lineTo(x + d + extInset, y);
+                ctx.lineTo(x + d + extInset, extY + t);
+                ctx.lineTo(x + d + extInset + c, extY);
+                ctx.lineTo(x + d + w - extInset - c, extY);
+                ctx.lineTo(x + d + w - extInset, extY + t);
+                ctx.lineTo(x + d + w - extInset, y);
+                ctx.lineTo(x + d + w, y);
+                
+                // Box 3 (F3) Semicircle Cutout
+                ctx.arc(x + d + w + d/2, y, r, Math.PI, 0, true);
+                // Box 4 (F4) Top edge
+                ctx.lineTo(x + d + w + d + w, y);
+                
+                // Box 4 Right edge liso
+                ctx.lineTo(x + d + w + d + w, y + h);
+
+                // --- BORDES INFERIORES ---
+                // Box 4 (F4) Bottom flap
+                ctx.lineTo(x + d + w + d + w - c, y + h + t); ctx.lineTo(x + d + w + d + c, y + h + t); ctx.lineTo(x + d + w + d, y + h);
+                // Box 3 (F3) Bottom flap
+                ctx.lineTo(x + d + w + d - c, y + h + t); ctx.lineTo(x + d + w + c, y + h + t); ctx.lineTo(x + d + w, y + h);
+                // Box 2 (F2) Bottom face ONLY (Alineada con la extensión. Solapa eliminada)
+                ctx.lineTo(x + d + w, y + h + d); ctx.lineTo(x + d, y + h + d); ctx.lineTo(x + d, y + h);
+                // Box 1 (F1) Bottom flap
+                ctx.lineTo(x + d - c, y + h + t); ctx.lineTo(x + c, y + h + t); ctx.lineTo(x, y + h);
+            }
+            ctx.closePath();
+        }
+
+        function drawMovibleLegFolds(ctx, x, y, w, d, h, isLeft) {
+            const style = document.querySelector('input[name="lineStyle"]:checked').value;
+            const bColor = borderColorInput.value;
+            if (style === 'none') return; 
+
+            const extH = Math.PI * 2.6 * scale;
+            const extY = y - extH;
+            const t = 1.875 * scale;
+            const extInset = 0.5 * scale;
+
+            ctx.beginPath();
+            if (isLeft) {
+                // Espejo: Líneas Verticales
+                ctx.moveTo(x + w, y); ctx.lineTo(x + w, y + h);
+                ctx.moveTo(x + w + d, y); ctx.lineTo(x + w + d, y + h);
+                ctx.moveTo(x + w + d + w, y); ctx.lineTo(x + w + d + w, y + h);
+                ctx.moveTo(x + w + d + w + d, y); ctx.lineTo(x + w + d + w + d, y + h); // Doblez solapa derecha
+
+                // Extension on F2 (Alineada planta del pie) -> Box 3
+                ctx.moveTo(x + w + d, y); ctx.lineTo(x + w + d + w, y);
+                ctx.moveTo(x + w + d + extInset, extY + t); ctx.lineTo(x + w + d + w - extInset, extY + t);
+
+                // Base inferior completa
+                ctx.moveTo(x, y + h); ctx.lineTo(x + w + d + w + d, y + h);
+            } else {
+                // Normal: Líneas Verticales
+                ctx.moveTo(x, y); ctx.lineTo(x, y + h); // Doblez solapa izq
+                ctx.moveTo(x + d, y); ctx.lineTo(x + d, y + h);
+                ctx.moveTo(x + d + w, y); ctx.lineTo(x + d + w, y + h);
+                ctx.moveTo(x + d + w + d, y); ctx.lineTo(x + d + w + d, y + h);
+
+                // Extension on F2 (Alineada planta del pie) -> Box 2
+                ctx.moveTo(x + d, y); ctx.lineTo(x + d + w, y);
+                ctx.moveTo(x + d + extInset, extY + t); ctx.lineTo(x + d + w - extInset, extY + t);
+
+                // Base inferior completa
+                ctx.moveTo(x, y + h); ctx.lineTo(x + d + w + d + w, y + h);
+            }
+
+            if (style === 'dotted') { ctx.strokeStyle = bColor; ctx.lineWidth = 1.5; ctx.setLineDash([4, 4]); } 
+            else { ctx.strokeStyle = bColor; ctx.lineWidth = 1; ctx.globalAlpha = 0.6; ctx.setLineDash([]); }
+            ctx.stroke(); ctx.setLineDash([]); ctx.globalAlpha = 1.0;
+        }
+
+        function randomUUID() {
+
+        }
+        function drawMoviblePins(ctx, part, currentSkinImg, showOverlay, bColor, bThick, obColor, obThick) {
+            const x = part.dest[0], y = part.dest[1]; // Coordenadas absolutas X/Y
+            const style = document.querySelector('input[name="lineStyle"]:checked').value;
+
+            if (part.type === 'neck_pin') {
+                const redCircleRadius = 1.72 * scale; 
+                const circ = 2 * Math.PI * redCircleRadius;
+                const nw = circ * 1.25; 
+                const nh = 5.5 * scale; 
+                const fh = 2 * scale; 
+                const flapCount = 5; 
+                const flapW = nw / flapCount;
+
+                function traceNeckOutline() {
+                    ctx.beginPath();
+                    ctx.moveTo(x, y); 
+                    ctx.lineTo(x + nw, y); 
+                    ctx.lineTo(x + nw, y + nh);
+                    for(let i = flapCount; i > 0; i--) { 
+                        ctx.lineTo(x + i*flapW - flapW/2, y + nh + fh); 
+                        ctx.lineTo(x + (i-1)*flapW, y + nh); 
+                    }
+                    ctx.lineTo(x, y);
+                    ctx.closePath();
+                }
+
+                traceNeckOutline();
+                ctx.strokeStyle = obColor; ctx.lineWidth = obThick * 2; ctx.lineJoin = "round"; ctx.stroke();
+                ctx.fillStyle = "#ffffff"; ctx.fill();
+
+                ctx.save();
+                ctx.beginPath(); ctx.rect(x, y, nw, nh); ctx.clip(); 
+                if (currentSkinImg) {
+                    ctx.drawImage(currentSkinImg, 16, 0, 8, 8, x, y, nw, nh + fh);
+                    if (showOverlay) ctx.drawImage(currentSkinImg, 48, 0, 8, 8, x, y, nw, nh + fh);
+                } else {
+                    ctx.fillStyle = "#8d7162"; ctx.fill();
+                }
+                ctx.restore();
+
+                traceNeckOutline(); 
+                ctx.strokeStyle = bColor; ctx.lineWidth = bThick; ctx.lineJoin = "miter"; ctx.stroke();
+                
+                if (style !== 'none') {
+                    ctx.beginPath(); ctx.moveTo(x, y + nh); ctx.lineTo(x + nw, y + nh); 
+                    if (style === 'dotted') ctx.setLineDash([4, 4]);
+                    else { ctx.lineWidth = 1; ctx.globalAlpha = 0.6; }
+                    ctx.stroke(); ctx.setLineDash([]); ctx.globalAlpha = 1.0;
+                }
+
+            } 
+            else if (part.type === 'arm_pin') {
+                const pw = 6 * scale; 
+                const ph = Math.PI * 2.36 * scale; 
+                const flapH = 1.5 * scale; 
+                const toothW = 2 * scale; 
+                const flapCount = 5; 
+                const segment = ph / flapCount;
+
+                function traceArmPinOutline() {
+                    ctx.beginPath();
+                    ctx.moveTo(x, y);
+                    ctx.lineTo(x + 1*scale, y - flapH); ctx.lineTo(x + pw - 1*scale, y - flapH); ctx.lineTo(x + pw, y);
+                    if (part.side === 'left') {
+                        for(let i=1; i<=flapCount; i++) {
+                            ctx.lineTo(x + pw + toothW, y + i*segment - segment/2); ctx.lineTo(x + pw, y + i*segment);
+                        }
+                    } else { ctx.lineTo(x + pw, y + ph); }
+                    
+                    ctx.lineTo(x, y + ph);
+                    if (part.side === 'right') {
+                        for(let i = flapCount - 1; i >= 0; i--) {
+                            ctx.lineTo(x - toothW, y + i*segment + segment/2); ctx.lineTo(x, y + i*segment);
+                        }
+                    } else { ctx.lineTo(x, y); }
+                    ctx.closePath();
+                }
+
+                traceArmPinOutline();
+                ctx.strokeStyle = obColor; ctx.lineWidth = obThick * 2; ctx.lineJoin = "round"; ctx.stroke();
+                ctx.fillStyle = "#ffffff"; ctx.fill();
+
+                ctx.save();
+                ctx.beginPath(); ctx.rect(x, y, pw, ph); ctx.clip();
+                if (currentSkinImg) {
+                    if (part.side === 'right') {
+                        ctx.drawImage(currentSkinImg, 20, 21, 6, 4, x, y, pw, ph/2); 
+                        ctx.drawImage(currentSkinImg, 34, 21, 6, 4, x, y + ph/2, pw, ph/2); 
+                        if (showOverlay) {
+                            ctx.drawImage(currentSkinImg, 20, 37, 6, 4, x, y, pw, ph/2); 
+                            ctx.drawImage(currentSkinImg, 34, 37, 6, 4, x, y + ph/2, pw, ph/2); 
+                        }
+                    } else {
+                        ctx.drawImage(currentSkinImg, 22, 21, 6, 4, x, y, pw, ph/2); 
+                        ctx.drawImage(currentSkinImg, 32, 21, 6, 4, x, y + ph/2, pw, ph/2); 
+                        if (showOverlay) {
+                            ctx.drawImage(currentSkinImg, 22, 37, 6, 4, x, y, pw, ph/2); 
+                            ctx.drawImage(currentSkinImg, 32, 37, 6, 4, x, y + ph/2, pw, ph/2); 
+                        }
+                    }
+                } else {
+                    ctx.fillStyle = "#333333"; ctx.fill();
+                }
+                ctx.restore();
+
+                traceArmPinOutline();
+                ctx.strokeStyle = bColor; ctx.lineWidth = bThick; ctx.lineJoin = "miter"; ctx.stroke();
+
+                if (style !== 'none') {
+                    ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + pw, y);
+                    if (part.side === 'right') { ctx.moveTo(x, y); ctx.lineTo(x, y + ph); }
+                    if (part.side === 'left') { ctx.moveTo(x + pw, y); ctx.lineTo(x + pw, y + ph); }
+                    if (style === 'dotted') ctx.setLineDash([4, 4]);
+                    else { ctx.lineWidth = 1; ctx.globalAlpha = 0.6; }
+                    ctx.stroke(); ctx.setLineDash([]); ctx.globalAlpha = 1.0;
+                }
+            }
+            else if (part.type === 'pelvis_pin') {
+                const pw = 8 * scale; 
+                const ph = Math.PI * 3.9 * scale; 
+                const flapH = 2 * scale; 
+                const toothW = 2 * scale; 
+                const flapCount = 5; 
+                const segment = ph / flapCount;
+
+                function tracePelvisOutline() {
+                    ctx.beginPath();
+                    ctx.moveTo(x, y);
+                    ctx.lineTo(x + 1*scale, y - flapH); ctx.lineTo(x + pw - 1*scale, y - flapH); ctx.lineTo(x + pw, y);
+                    for(let i=1; i<=flapCount; i++) {
+                        ctx.lineTo(x + pw + toothW, y + i*segment - segment/2); ctx.lineTo(x + pw, y + i*segment);
+                    }
+                    ctx.lineTo(x, y + ph);
+                    for(let i=flapCount-1; i>=0; i--) {
+                        ctx.lineTo(x - toothW, y + i*segment + segment/2); ctx.lineTo(x, y + i*segment);
+                    }
+                    ctx.closePath();
+                }
+
+                tracePelvisOutline();
+                ctx.strokeStyle = obColor; ctx.lineWidth = obThick * 2; ctx.lineJoin = "round"; ctx.stroke();
+                ctx.fillStyle = "#ffffff"; ctx.fill();
+
+                ctx.save();
+                ctx.beginPath(); ctx.rect(x, y, pw, ph); ctx.clip();
+                if (currentSkinImg) {
+                    ctx.drawImage(currentSkinImg, 4, 20, 4, 2, x, y, pw/2, ph/2);
+                    ctx.drawImage(currentSkinImg, 20, 52, 4, 2, x + pw/2, y, pw/2, ph/2);
+                    if (showOverlay) {
+                        ctx.drawImage(currentSkinImg, 4, 36, 4, 2, x, y, pw/2, ph/2);
+                        ctx.drawImage(currentSkinImg, 4, 52, 4, 2, x + pw/2, y, pw/2, ph/2);
+                    }
+                    ctx.save();
+                    ctx.translate(0, y + ph * 0.75); ctx.scale(1, -1); ctx.translate(0, -(y + ph * 0.75));
+                    ctx.drawImage(currentSkinImg, 12, 20, 4, 2, x, y + ph/2, pw/2, ph/2);
+                    ctx.drawImage(currentSkinImg, 28, 52, 4, 2, x + pw/2, y + ph/2, pw/2, ph/2);
+                    if (showOverlay) {
+                        ctx.drawImage(currentSkinImg, 12, 36, 4, 2, x, y + ph/2, pw/2, ph/2); 
+                        ctx.drawImage(currentSkinImg, 12, 52, 4, 2, x + pw/2, y + ph/2, pw/2, ph/2); 
+                    }
+                    ctx.restore();
+                } else {
+                    ctx.fillStyle = "#333333"; ctx.fill();
+                }
+                ctx.restore();
+
+                tracePelvisOutline();
+                ctx.strokeStyle = bColor; ctx.lineWidth = bThick; ctx.lineJoin = "miter"; ctx.stroke();
+
+                if (style !== 'none') {
+                    ctx.beginPath();
+                    ctx.moveTo(x, y); ctx.lineTo(x + pw, y);
+                    ctx.moveTo(x, y); ctx.lineTo(x, y + ph);
+                    ctx.moveTo(x + pw, y); ctx.lineTo(x + pw, y + ph);
+                    ctx.moveTo(x, y + ph/2); ctx.lineTo(x + pw, y + ph/2);
+                    if (style === 'dotted') ctx.setLineDash([4, 4]);
+                    else { ctx.lineWidth = 1; ctx.globalAlpha = 0.6; }
+                    ctx.stroke(); ctx.setLineDash([]); ctx.globalAlpha = 1.0;
+                }
+            }
+        }
+
+        function renderMovibleModel() {
+            const showOverlay = document.getElementById('overlayToggle').checked;
+            const bColor = borderColorInput.value;
+            const bThick = parseFloat(borderThicknessInput.value);
+            const obColor = outerBorderColorInput.value;
+            const obThick = parseFloat(outerBorderThicknessInput.value);
+
+            layoutMovible.forEach(part => {
+                const x = part.dest[0], y = part.dest[1]; // Coordenadas absolutas X/Y
+                if (part.type.includes('_pin')) { 
+                    drawMoviblePins(ctx, part, currentSkinImg, showOverlay, bColor, bThick, obColor, obThick); 
+                    return; 
+                }
+                
+                const w = part.w * scale, d = part.d * scale, h = part.h * scale;
+                const isLeft = (part.name === 'Left Arm' || part.name === 'Left Leg');
+
+                // 1. Trazar fondo blanco y contorno general
+                if (part.type === 'head') buildSmartOutlinePath(ctx, part);
+                else if (part.type === 'body') buildMovibleBodyOutline(ctx, x, y, w, d, h);
+                else if (part.type === 'arm') buildMovibleArmOutline(ctx, x, y, w, d, h, isLeft);
+                else if (part.type === 'leg') buildMovibleLegOutline(ctx, x, y, w, d, h, isLeft);
+                
+                // Borde externo
+                ctx.strokeStyle = obColor; ctx.lineWidth = obThick * 2; ctx.lineJoin = "round"; ctx.stroke();
+                ctx.fillStyle = "#ffffff"; ctx.fill();
+
+                // 2. Aplicar texturas mapeadas
+                if (currentSkinImg) {
+                    ctx.save();
+                    ctx.beginPath();
+                    if (part.type === 'head') buildSmartOutlinePath(ctx, part);
+                    else if (part.type === 'body') buildMovibleBodyOutline(ctx, x, y, w, d, h);
+                    else if (part.type === 'arm') buildMovibleArmOutline(ctx, x, y, w, d, h, isLeft);
+                    else if (part.type === 'leg') buildMovibleLegOutline(ctx, x, y, w, d, h, isLeft);
+                    ctx.clip(); 
+
+                    if (part.type === 'head') {
+                        const baseFaces = getFaces(part.base[0], part.base[1], part.w, part.d, part.h);
+                        baseFaces.forEach(face => ctx.drawImage(currentSkinImg, face.src[0], face.src[1], face.src[2], face.src[3], x + face.localDest[0]*scale, y + face.localDest[1]*scale, face.localDest[2]*scale, face.localDest[3]*scale));
+                        if (showOverlay) {
+                            const overlayFaces = getFaces(part.overlay[0], part.overlay[1], part.w, part.d, part.h);
+                            overlayFaces.forEach(face => ctx.drawImage(currentSkinImg, face.src[0], face.src[1], face.src[2], face.src[3], x + face.localDest[0]*scale, y + face.localDest[1]*scale, face.localDest[2]*scale, face.localDest[3]*scale));
+                        }
+                    } else if (part.type === 'arm') {
+                        const bx = part.base[0], by = part.base[1];
+                        const ox = part.overlay[0], oy = part.overlay[1];
+                        
+                        const drawFn = (sx, sy, sw, sh, dx, dy, dw, dh) => {
+                            ctx.drawImage(currentSkinImg, sx, sy, sw, sh, dx, dy, dw, dh);
+                            if (showOverlay) ctx.drawImage(currentSkinImg, ox + (sx - bx), oy + (sy - by), sw, sh, dx, dy, dw, dh);
+                        };
+
+                        if (isLeft) {
+                            // EFECTO ESPEJO: F4, F1, F2, F3
+                            drawFn(bx+part.d+part.w+part.d, by+part.d, part.w, part.h, x, y+d, w, h); // Box 1: F4
+                            drawFn(bx, by+part.d, part.d, part.h, x+w, y+d, d, h); // Box 2: F1
+                            drawFn(bx+part.d, by+part.d, part.w, part.h, x+w+d, y+d, w, h); // Box 3: F2 (Frente)
+                            drawFn(bx+part.d+part.w, by+part.d, part.d, part.h, x+w+d+w, y+d, d, h); // Box 4: F3
+                            
+                            // Top Face (Atado a Box 3 - Frente)
+                            drawFn(bx+part.d, by, part.w, part.d, x+w+d, y, w, d);
+                            // Bottom Face (Atado a Box 3 - Frente)
+                            drawFn(bx+part.d+part.w, by, part.w, part.d, x+w+d, y+d+h, w, d);
+                        } else {
+                            // NORMAL: F1, F2, F3, F4
+                            drawFn(bx, by+part.d, part.d, part.h, x, y+d, d, h); // Box 1: F1
+                            drawFn(bx+part.d, by+part.d, part.w, part.h, x+d, y+d, w, h); // Box 2: F2 (Frente)
+                            drawFn(bx+part.d+part.w, by+part.d, part.d, part.h, x+d+w, y+d, d, h); // Box 3: F3
+                            drawFn(bx+part.d+part.w+part.d, by+part.d, part.w, part.h, x+d+w+d, y+d, w, h); // Box 4: F4
+                            
+                            // Top Face
+                            drawFn(bx+part.d, by, part.w, part.d, x+d, y, w, d);
+                            // Bottom Face
+                            drawFn(bx+part.d+part.w, by, part.w, part.d, x+d, y+d+h, w, d);
+                        }
+                    } else if (part.type === 'body') {
+                        const bx = part.base[0], by = part.base[1];
+                        const ox = part.overlay[0], oy = part.overlay[1];
+                        const r = d / 2;
+
+                        const drawFn = (sx, sy, sw, sh, dx, dy, dw, dh) => {
+                            ctx.drawImage(currentSkinImg, sx, sy, sw, sh, dx, dy, dw, dh);
+                            if (showOverlay) ctx.drawImage(currentSkinImg, ox + (sx - bx), oy + (sy - by), sw, sh, dx, dy, dw, dh);
+                        };
+                        
+                        const rLegBx = 0, rLegBy = 16, rLegOx = 0, rLegOy = 32;
+                        const lLegBx = 24, lLegBy = 48, lLegOx = 8, lLegOy = 48; 
+
+                        drawFn(bx, by+part.d, part.d, part.h, x, y+d, d, h); 
+                        ctx.drawImage(currentSkinImg, rLegBx, rLegBy + 4, 4, 2, x, y+d+h, d, r);
+                        if (showOverlay) ctx.drawImage(currentSkinImg, rLegOx, rLegOy + 4, 4, 2, x, y+d+h, d, r);
+
+                        drawFn(bx+part.d, by+part.d, part.w, part.h, x+d, y+d, w, h); 
+                        
+                        drawFn(bx+part.d+part.w, by+part.d, part.d, part.h, x+d+w, y+d, d, h); 
+                        ctx.drawImage(currentSkinImg, lLegBx, lLegBy + 4, 4, 2, x+d+w, y+d+h, d, r);
+                        if (showOverlay) ctx.drawImage(currentSkinImg, lLegOx, lLegOy + 4, 4, 2, x+d+w, y+d+h, d, r);
+                        
+                        drawFn(bx+part.d+part.w+part.d, by+part.d, part.w, part.h, x+d+w+d, y+d, w, h); 
+                        
+                        drawFn(bx+part.d, by, part.w, part.d, x+d, y, w, d); 
+                    } else if (part.type === 'leg') {
+                        const bx = part.base[0], by = part.base[1];
+                        const ox = part.overlay[0], oy = part.overlay[1];
+                        const extH = Math.PI * 2.6 * scale; 
+                        const extY = y - extH; 
+                        const extInset = 0.5 * scale;
+                        const flapTipH = 1.875 * scale;
+                        
+                        const drawFn = (sx, sy, sw, sh, dx, dy, dw, dh) => {
+                            ctx.drawImage(currentSkinImg, sx, sy, sw, sh, dx, dy, dw, dh);
+                            if (showOverlay) ctx.drawImage(currentSkinImg, ox + (sx - bx), oy + (sy - by), sw, sh, dx, dy, dw, dh);
+                        };
+
+                        const drawExtension = (exX, exW) => {
+                            const exSx = bx+part.d, exSy = by+part.d; // F2 (Frente)
+                            const backSx = bx+part.d+part.w+part.d, backSy = by+part.d; // F4 (Espalda)
+
+                            // Cuerpo principal de la extensión (textura del frente alargada hacia arriba)
+                            ctx.drawImage(currentSkinImg, exSx, exSy, part.w, 2, exX, extY + flapTipH, exW, extH - flapTipH);
+                            if (showOverlay) ctx.drawImage(currentSkinImg, ox + (exSx - bx), oy + (exSy - by), part.w, 2, exX, extY + flapTipH, exW, extH - flapTipH);
+
+                            // Punta de la extensión (Textura de espalda, invertida boca abajo)
+                            ctx.save();
+                            ctx.translate(exX + exW/2, extY + flapTipH/2); // Centro de la solapa
+                            ctx.scale(1, -1); // Voltear verticalmente
+                            ctx.drawImage(currentSkinImg, backSx, backSy, part.w, 2, -exW/2, -flapTipH/2, exW, flapTipH);
+                            if (showOverlay) ctx.drawImage(currentSkinImg, ox + (backSx - bx), oy + (backSy - by), part.w, 2, -exW/2, -flapTipH/2, exW, flapTipH);
+                            ctx.restore();
+                        };
+
+                        if (isLeft) {
+                            // EFECTO ESPEJO: F4, F1, F2, F3
+                            drawFn(bx+part.d+part.w+part.d, by+part.d, part.w, part.h, x, y, w, h); // Box 1: F4
+                            drawFn(bx, by+part.d, part.d, part.h, x+w, y, d, h); // Box 2: F1
+                            drawFn(bx+part.d, by+part.d, part.w, part.h, x+w+d, y, w, h); // Box 3: F2 (Frente)
+                            drawFn(bx+part.d+part.w, by+part.d, part.d, part.h, x+w+d+w, y, d, h); // Box 4: F3
+                            
+                            // Extensión dibujada sobre Box 3
+                            drawExtension(x + w + d + extInset, w - 2*extInset);
+                            
+                            // F2 Bottom face (Alineado a Box 3)
+                            drawFn(bx+part.d+part.w, by, part.w, part.d, x+w+d, y+h, w, d);
+                        } else {
+                            // NORMAL: F1, F2, F3, F4
+                            drawFn(bx, by+part.d, part.d, part.h, x, y, d, h); // Box 1: F1
+                            drawFn(bx+part.d, by+part.d, part.w, part.h, x+d, y, w, h); // Box 2: F2 (Frente)
+                            drawFn(bx+part.d+part.w, by+part.d, part.d, part.h, x+d+w, y, d, h); // Box 3: F3
+                            drawFn(bx+part.d+part.w+part.d, by+part.d, part.w, part.h, x+d+w+d, y, w, h); // Box 4: F4
+                            
+                            // Extensión dibujada sobre Box 2
+                            drawExtension(x + d + extInset, w - 2*extInset);
+                            
+                            // F2 Bottom face (Alineado a Box 2)
+                            drawFn(bx+part.d+part.w, by, part.w, part.d, x+d, y+h, w, d);
+                        }
+                    }
+                    ctx.restore();
+                } else {
+                    ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; ctx.fill();
+                }
+
+                // 3. Dibujar recortes y uniones (Cutouts & Holes)
+                ctx.strokeStyle = bColor; ctx.lineWidth = bThick; ctx.setLineDash([]);
+                if (part.type === 'head') {
+                    ctx.fillStyle = "#ff0000";
+                    ctx.beginPath(); ctx.arc(x + d + w/2, y + d + h + d/2, 1.75 * scale, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+                } else if (part.type === 'body') {
+                    ctx.fillStyle = "#00ff00"; ctx.beginPath(); ctx.arc(x + d + w/2, y + d/2, 1.75 * scale, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+                    ctx.fillStyle = "#ff0000"; 
+                    ctx.beginPath(); ctx.arc(x + d/2, y+d + 2*scale, scale*1.2, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+                    ctx.beginPath(); ctx.arc(x+d+w + d/2, y+d + 2*scale, scale*1.2, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+                } else if (part.type === 'arm') {
+                    ctx.fillStyle = "#00ff00"; ctx.beginPath(); 
+                    if (isLeft) {
+                        // Espejo: Cara interior (F1) está en Box 2
+                        ctx.arc(x + w + d/2, y + d + 2*scale, scale*1.2, 0, Math.PI*2); 
+                    } else {
+                        // Normal: Cara interior (F3) está en Box 3
+                        ctx.arc(x + d + w + d/2, y + d + 2*scale, scale*1.2, 0, Math.PI*2); 
+                    }
+                    ctx.fill(); ctx.stroke();
+                }
+
+                // 4. Contornos negros y pliegues
+                ctx.strokeStyle = bColor; ctx.lineWidth = bThick; ctx.lineJoin = "miter";
+                if (part.type === 'head') {
+                    buildSmartOutlinePath(ctx, part); ctx.stroke(); drawSmartFoldLines(ctx, part);
+                } else if (part.type === 'body') {
+                    buildMovibleBodyOutline(ctx, x, y, w, d, h); ctx.stroke(); drawMovibleBodyFolds(ctx, x, y, w, d, h);
+                } else if (part.type === 'arm') {
+                    buildMovibleArmOutline(ctx, x, y, w, d, h, isLeft); ctx.stroke(); drawMovibleArmFolds(ctx, x, y, w, d, h, isLeft);
+                } else if (part.type === 'leg') {
+                    buildMovibleLegOutline(ctx, x, y, w, d, h, isLeft); ctx.stroke(); drawMovibleLegFolds(ctx, x, y, w, d, h, isLeft);
+                }
+            });
+        }
+
+        // ==========================================
+        // === RENDER ALL ===========================
+        // ==========================================
+
+        function renderAll() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.imageSmoothingEnabled = false;
+
+            const currentModelType = document.querySelector('input[name="modelType"]:checked').value;
+            const currentBgObj = currentModelType === 'normal' ? bgImageNormalObj : bgImageMovibleObj;
+            const showOverlay = document.getElementById('overlayToggle').checked;
+            
+            // --- Actualizar la escala dinámicamente según el modo seleccionado ---
+            scale = (currentModelType === 'normal') ? scaleNormal : scaleMovible;
+            
+            const bColor = borderColorInput.value;
+            const bThick = parseFloat(borderThicknessInput.value);
+            const obColor = outerBorderColorInput.value;
+            const obThick = parseFloat(outerBorderThicknessInput.value);
+
+            if (currentBgObj && currentBgObj.complete && currentBgObj.src) {
+                ctx.drawImage(currentBgObj, 0, 0, canvas.width, canvas.height);
+            }
+
+            ctx.save();
+
+            // Bifurcación Principal del Renderizado
+            if (currentModelType === 'normal') {
+                layoutNormal.forEach(part => {
+                    const isLeftLimb = (part.name === 'Brazo Izq.' || part.name === 'Pierna Izq.');
+                    
+                    if (isLeftLimb) buildNormalLeftOutline(ctx, part);
+                    else buildSmartOutlinePath(ctx, part);
+
+                    // Primero dibujamos el borde externo al doble de grosor
+                    ctx.strokeStyle = obColor; ctx.lineWidth = obThick * 2; ctx.lineJoin = "round"; ctx.stroke();
+
+                    // Luego rellenamos de blanco (recuperando el 100% del área de las solapas)
+                    ctx.fillStyle = "#ffffff"; ctx.fill();
+
+                    // Relleno de color para la solapa de los brazos
+                    if (part.name === 'Brazo Der.') {
+                        drawMiddleFlap(ctx, part, colorSolapaBrazos);
+                    } else if (part.name === 'Brazo Izq.') {
+                        drawMiddleFlapLeft(ctx, part, colorSolapaBrazos);
+                    }
+                });
+
+                layoutNormal.forEach(part => {
+                    const isLeftLimb = (part.name === 'Brazo Izq.' || part.name === 'Pierna Izq.');
+                    const faces = isLeftLimb ? getFacesLeft(0, 0, part.w, part.d, part.h) : getFaces(0, 0, part.w, part.d, part.h);
+                    
+                    if (currentSkinImg) {
+                        const baseFaces = isLeftLimb ? getFacesLeft(part.base[0], part.base[1], part.w, part.d, part.h) : getFaces(part.base[0], part.base[1], part.w, part.d, part.h);
+                        baseFaces.forEach(face => {
+                            const dx = part.dest[0] + face.localDest[0] * scale, dy = part.dest[1] + face.localDest[1] * scale;
+                            const dw = face.localDest[2] * scale, dh = face.localDest[3] * scale;
+                            ctx.drawImage(currentSkinImg, face.src[0], face.src[1], face.src[2], face.src[3], dx, dy, dw, dh);
+                        });
+                        
+                        if (showOverlay) {
+                            const overlayFaces = isLeftLimb ? getFacesLeft(part.overlay[0], part.overlay[1], part.w, part.d, part.h) : getFaces(part.overlay[0], part.overlay[1], part.w, part.d, part.h);
+                            overlayFaces.forEach(face => {
+                                const dx = part.dest[0] + face.localDest[0] * scale, dy = part.dest[1] + face.localDest[1] * scale;
+                                const dw = face.localDest[2] * scale, dh = face.localDest[3] * scale;
+                                ctx.drawImage(currentSkinImg, face.src[0], face.src[1], face.src[2], face.src[3], dx, dy, dw, dh);
+                            });
+                        }
+                    } else {
+                        faces.forEach(face => {
+                            const dx = part.dest[0] + face.localDest[0] * scale, dy = part.dest[1] + face.localDest[1] * scale;
+                            const dw = face.localDest[2] * scale, dh = face.localDest[3] * scale;
+                            ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; ctx.fillRect(dx, dy, dw, dh);
+                        });
+                    }
+                });
+
+                layoutNormal.forEach(part => {
+                    const isLeftLimb = (part.name === 'Brazo Izq.' || part.name === 'Pierna Izq.');
+                    
+                    if (isLeftLimb) {
+                        buildNormalLeftOutline(ctx, part);
+                        ctx.strokeStyle = bColor; ctx.lineWidth = bThick; ctx.lineJoin = "miter"; ctx.stroke();
+                        drawNormalLeftFoldLines(ctx, part);
+                    } else {
+                        buildSmartOutlinePath(ctx, part);
+                        ctx.strokeStyle = bColor; ctx.lineWidth = bThick; ctx.lineJoin = "miter"; ctx.stroke();
+                        drawSmartFoldLines(ctx, part);
+                    }
+                });
+            } else {
+                renderMovibleModel();
+            }
+            ctx.restore();
+
+            // ==================
+            // NAMETAG RENDERING
+            // ==================
+            
+            const scaleRatio = scale / 20;
+            let ntText = nametagInput.value || "&4&lCREATOR &dAlonsoAliaga &a[DEV]";
+            let chars = parseFormattedText(ntText);
+            
+            let totalW = 0;
+            const fontSize = 50 * scaleRatio;
+            chars.forEach(c => { 
+                let fFamily = "MinecraftRegular";
+                if (c.bold && c.italic) fFamily = "MinecraftBoldItalic";
+                else if (c.bold) fFamily = "MinecraftBold";
+                else if (c.italic) fFamily = "MinecraftItalic";
+                ctx.font = `${fontSize}px ${fFamily}`; 
+                totalW += ctx.measureText(c.char).width; 
+            });
+            
+            const paddingSides = 60 * scaleRatio; 
+            const nw = Math.max(150 * scaleRatio, totalW + paddingSides); 
+            const nh = 70 * scaleRatio; 
+            const nd = 46 * scaleRatio; 
+            
+            const configPos = currentModelType === 'normal' ? CONFIG_POSITIONS_NORMAL : CONFIG_POSITIONS_MOVIBLE;
+            const nx = configPos.nametag.x - (nw / 2); 
+            const ny = configPos.nametag.y; 
+            
+            const p16 = 16 * scaleRatio;
+            const p8 = 8 * scaleRatio;
+
+            ctx.beginPath();
+            ctx.moveTo(nx, ny); ctx.lineTo(nx + nw, ny); ctx.lineTo(nx + nw, ny + nh + nd); 
+            ctx.lineTo(nx + nw + p16, ny + nh + nd + p8); ctx.lineTo(nx + nw + p16, ny + nh + nd + nh - p8); ctx.lineTo(nx + nw, ny + nh + nd + nh); 
+            ctx.lineTo(nx + nw - p8, ny + nh + nd + nh + p16); ctx.lineTo(nx + p8, ny + nh + nd + nh + p16); ctx.lineTo(nx, ny + nh + nd + nh); 
+            ctx.lineTo(nx - p16, ny + nh + nd + nh - p8); ctx.lineTo(nx - p16, ny + nh + nd + p8); ctx.lineTo(nx, ny + nh + nd); 
+            ctx.lineTo(nx, ny); ctx.closePath();
+            
+            ctx.strokeStyle = obColor; ctx.lineWidth = obThick * 2; ctx.lineJoin = "round"; ctx.stroke();
+
+            const frontFaceColor = "#333333"; 
+            drawNametagStand(ctx, nx, ny, nw, nh, nd, frontFaceColor);
+            drawMinecraftText(ctx, chars, nx + (nw/2), ny + (nh/2));
+        }
+
+        // ==========================================
+        // === NAMETAG & MINIMESSAGE LOGIC ==========
+        // ==========================================
+        
+        const mcColors = {
+            '0': '#000000', '1': '#0000AA', '2': '#00AA00', '3': '#00AAAA',
+            '4': '#AA0000', '5': '#AA00AA', '6': '#FFAA00', '7': '#AAAAAA',
+            '8': '#555555', '9': '#5555FF', 'a': '#55FF55', 'b': '#55FFFF',
+            'c': '#FF5555', 'd': '#FF55FF', 'e': '#FFFF55', 'f': '#FFFFFF'
+        };
+
+        function hexToRgb(hex) {
+            let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            return result ? { r: parseInt(result[1], 16), g: parseInt(result[2], 16), b: parseInt(result[3], 16) } : {r:255,g:255,b:255};
+        }
+
+        function getGradientColor(colors, ratio) {
+            if (colors.length <= 1) return colors[0] || '#ffffff';
+            const segments = colors.length - 1;
+            const segment = Math.min(Math.floor(ratio * segments), segments - 1);
+            const segmentRatio = (ratio * segments) - segment;
+            
+            const c1 = hexToRgb(colors[segment]);
+            const c2 = hexToRgb(colors[segment + 1]);
+            
+            const r = Math.round(c1.r + segmentRatio * (c2.r - c1.r));
+            const g = Math.round(c1.g + segmentRatio * (c2.g - c1.g));
+            const b = Math.round(c1.b + segmentRatio * (c2.b - c1.b));
+            
+            return `#${(1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1).padStart(6, '0')}`;
+        }
+
+        function getVisibleLength(s) {
+            let clean = s.replace(/<\/?(rainbow|gradient[^>]*|l|b|st|u|i)>/gi, '')
+                         .replace(/&[0-9a-fk-or]/gi, '')
+                         .replace(/&#[0-9a-fA-F]{6}/gi, '');
+            return clean.length;
+        }
+
+        function parseFormattedText(str) {
+            let chars = [];
+            let state = { color: '#ffffff', bold: false, italic: false, underline: false, strikethrough: false };
+            let activeGradient = null; 
+            let i = 0;
+            
+            while (i < str.length) {
+                if (str.startsWith('<rainbow>', i)) { 
+                    let endIdx = str.indexOf('</rainbow>', i);
+                    let sub = endIdx !== -1 ? str.substring(i + 9, endIdx) : str.substring(i + 9);
+                    activeGradient = {
+                        colors: ['#ff0000', '#ff7f00', '#ffff00', '#00ff00', '#0000ff', '#4b0082', '#9400d3'],
+                        index: 0,
+                        length: Math.max(1, getVisibleLength(sub) - 1)
+                    };
+                    i += 9; continue; 
+                }
+                if (str.startsWith('</rainbow>', i)) { activeGradient = null; i += 10; continue; }
+
+                if (str.startsWith('<gradient:', i)) {
+                    let closeAngle = str.indexOf('>', i);
+                    if (closeAngle !== -1) {
+                        let colorStr = str.substring(i + 10, closeAngle);
+                        let colors = colorStr.split(':').map(c => c.startsWith('#') ? c : (mcColors[c] || c));
+                        let endIdx = str.indexOf('</gradient>', closeAngle);
+                        let sub = endIdx !== -1 ? str.substring(closeAngle + 1, endIdx) : str.substring(closeAngle + 1);
+                        activeGradient = {
+                            colors: colors,
+                            index: 0,
+                            length: Math.max(1, getVisibleLength(sub) - 1)
+                        };
+                        i = closeAngle + 1; continue;
+                    }
+                }
+                if (str.startsWith('</gradient>', i)) { activeGradient = null; i += 11; continue; }
+                
+                if (str.startsWith('<l>', i) || str.startsWith('<b>', i)) { state.bold = true; i += 3; continue; }
+                if (str.startsWith('</l>', i) || str.startsWith('</b>', i)) { state.bold = false; i += 4; continue; }
+                if (str.startsWith('<st>', i)) { state.strikethrough = true; i += 4; continue; }
+                if (str.startsWith('</st>', i)) { state.strikethrough = false; i += 5; continue; }
+                if (str.startsWith('<u>', i)) { state.underline = true; i += 3; continue; }
+                if (str.startsWith('</u>', i)) { state.underline = false; i += 4; continue; }
+                if (str.startsWith('<i>', i)) { state.italic = true; i += 3; continue; }
+                if (str.startsWith('</i>', i)) { state.italic = false; i += 4; continue; }
+                
+                // Color codes
+                let m = str.substring(i).match(/^&([0-9a-fk-or])/i);
+                if (m) {
+                    let c = m[1].toLowerCase();
+                    if (c === 'l') state.bold = true;
+                    else if (c === 'm') state.strikethrough = true;
+                    else if (c === 'n') state.underline = true;
+                    else if (c === 'o') state.italic = true;
+                    else if (c === 'r') { 
+                        state.color = '#ffffff'; 
+                        state.bold = false; state.italic = false; state.underline = false; state.strikethrough = false; 
+                        activeGradient = null; 
+                    }
+                    else if (mcColors[c]) { 
+                        state.color = mcColors[c]; 
+                        state.bold = false; state.italic = false; state.underline = false; state.strikethrough = false; 
+                        activeGradient = null; // Un color plano interrumpe el gradiente
+                    }
+                    i += 2; continue;
+                }
+                m = str.substring(i).match(/^&#([0-9a-fA-F]{6})/i);
+                if (m) { 
+                    state.color = '#' + m[1]; 
+                    state.bold = false; state.italic = false; state.underline = false; state.strikethrough = false; 
+                    activeGradient = null; 
+                    i += 8; continue; 
+                }
+                
+                // Calc final color per char
+                let charColor = state.color;
+                if (activeGradient && activeGradient.colors.length > 0) {
+                    let ratio = activeGradient.length > 0 ? activeGradient.index / activeGradient.length : 0;
+                    charColor = getGradientColor(activeGradient.colors, ratio);
+                    activeGradient.index++;
+                }
+                
+                chars.push({ 
+                    char: str[i], 
+                    color: charColor, 
+                    bold: state.bold, 
+                    italic: state.italic, 
+                    underline: state.underline, 
+                    strikethrough: state.strikethrough 
+                });
+                i++;
+            }
+            return chars;
+        }
+
+        function drawNametagStand(ctx, x, y, w, h, d, frontColor) {
+            const scaleRatio = scale / 20;
+            const t = 22.5 * scaleRatio, c = 9 * scaleRatio; 
+            const bColor = borderColorInput.value;
+            const bThick = parseFloat(borderThicknessInput.value);
+            
+            ctx.beginPath();
+            ctx.moveTo(x, y); ctx.lineTo(x + w, y);
+            ctx.lineTo(x + w, y + h + d); 
+            ctx.lineTo(x + w + t, y + h + d + c); ctx.lineTo(x + w + t, y + h + d + h - c); ctx.lineTo(x + w, y + h + d + h); 
+            ctx.lineTo(x + w - c, y + h + d + h + t); ctx.lineTo(x + c, y + h + d + h + t); ctx.lineTo(x, y + h + d + h); 
+            ctx.lineTo(x - t, y + h + d + h - c); ctx.lineTo(x - t, y + h + d + c); ctx.lineTo(x, y + h + d); 
+            ctx.lineTo(x, y); ctx.closePath();
+            
+            ctx.fillStyle = "#ffffff"; ctx.fill();
+
+            ctx.fillStyle = frontColor;
+            ctx.fillRect(x, y, w, h + d + h);
+
+            ctx.strokeStyle = bColor; ctx.lineWidth = bThick; ctx.setLineDash([]); ctx.stroke();
+            
+            const style = document.querySelector('input[name="lineStyle"]:checked').value;
+            if (style !== 'none') {
+                ctx.beginPath();
+                ctx.moveTo(x, y + h); ctx.lineTo(x + w, y + h);
+                ctx.moveTo(x, y + h + d); ctx.lineTo(x + w, y + h + d);
+                ctx.moveTo(x + w, y + h + d); ctx.lineTo(x + w, y + h + d + h); 
+                ctx.moveTo(x, y + h + d + h); ctx.lineTo(x + w, y + h + d + h); 
+                ctx.moveTo(x, y + h + d); ctx.lineTo(x, y + h + d + h); 
+                
+                if (style === 'dotted') { 
+                    ctx.strokeStyle = bColor; ctx.lineWidth = 1.5; ctx.setLineDash([4, 4]); 
+                } else { 
+                    ctx.strokeStyle = bColor; ctx.lineWidth = 1; ctx.globalAlpha = 0.6; ctx.setLineDash([]); 
+                }
+                ctx.stroke(); ctx.setLineDash([]); ctx.globalAlpha = 1.0;
+            }
+        }
+
+        function drawMinecraftText(ctx, chars, cx, cy) {
+            const scaleRatio = scale / 20;
+            const fontSize = 50 * scaleRatio;
+            let totalW = 0;
+            chars.forEach(c => { 
+                let fFamily = "MinecraftRegular";
+                if (c.bold && c.italic) fFamily = "MinecraftBoldItalic";
+                else if (c.bold) fFamily = "MinecraftBold";
+                else if (c.italic) fFamily = "MinecraftItalic";
+                ctx.font = `${fontSize}px ${fFamily}`; 
+                totalW += ctx.measureText(c.char).width; 
+            });
+            
+            let startX = cx - totalW / 2;
+            let currentY = cy + 16 * scaleRatio; 
+            
+            // Layer 1: Shadows
+            let currentX = startX;
+            chars.forEach(c => {
+                let fFamily = "MinecraftRegular";
+                if (c.bold && c.italic) fFamily = "MinecraftBoldItalic";
+                else if (c.bold) fFamily = "MinecraftBold";
+                else if (c.italic) fFamily = "MinecraftItalic";
+                ctx.font = `${fontSize}px ${fFamily}`;
+                
+                let rgb = hexToRgb(c.color);
+                ctx.fillStyle = `rgb(${Math.floor(rgb.r*0.25)},${Math.floor(rgb.g*0.25)},${Math.floor(rgb.b*0.25)})`;
+                let w = ctx.measureText(c.char).width;
+                
+                ctx.fillText(c.char, currentX + 4 * scaleRatio, currentY + 4 * scaleRatio);
+                if (c.strikethrough) ctx.fillRect(currentX + 4 * scaleRatio, currentY - 14 * scaleRatio, w, 5 * scaleRatio);
+                if (c.underline) ctx.fillRect(currentX + 4 * scaleRatio, currentY + 6 * scaleRatio, w, 5 * scaleRatio);
+                
+                currentX += w;
+            });
+            
+            // Layer 2: Main Text Colors
+            currentX = startX;
+            chars.forEach(c => {
+                let fFamily = "MinecraftRegular";
+                if (c.bold && c.italic) fFamily = "MinecraftBoldItalic";
+                else if (c.bold) fFamily = "MinecraftBold";
+                else if (c.italic) fFamily = "MinecraftItalic";
+                ctx.font = `${fontSize}px ${fFamily}`;
+                
+                ctx.fillStyle = c.color;
+                let w = ctx.measureText(c.char).width;
+                
+                ctx.fillText(c.char, currentX, currentY);
+                if (c.strikethrough) ctx.fillRect(currentX, currentY - 18 * scaleRatio, w, 5 * scaleRatio);
+                if (c.underline) ctx.fillRect(currentX, currentY + 2 * scaleRatio, w, 5 * scaleRatio);
+                
+                currentX += w;
+            });
+        }
+
+        // --- Extractor de URL o Base64 ---
+        function getSkinInputType(input) {
+            if (input.startsWith("http://") || input.startsWith("https://")) {
+                return { type: 'url', value: input };
+            }
+            try {
+                let cleanInput = input.trim();
+                let decoded = atob(cleanInput);
+                let json = JSON.parse(decoded);
+                if (json && json.textures && json.textures.SKIN && json.textures.SKIN.url) {
+                    return { type: 'base64', value: json.textures.SKIN.url };
+                }
+            } catch (e) { }
+            return { type: 'name', value: input };
+        }
+
+        // --- Event Listeners Generator ---
+        lineStyleRadios.forEach(r => r.addEventListener('change', () => { addLog(`Line style changed: ${r.value}`); renderAll(); }));
+        modelStyleRadios.forEach(r => r.addEventListener('change', () => { addLog(`Model style changed: ${r.value}`); renderAll(); }));
+        overlayToggle.addEventListener('change', () => { addLog(`Overlay toggled`); renderAll(); });
+        nametagInput.addEventListener('input', renderAll);
+
+        skinInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+            addLog(`Reading uploaded file: ${file.name}...`);
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const img = new Image();
+                img.onload = () => {
+                    currentSkinImg = img;
+                    downloadedFileName = `${file.name.split('.')[0]}_papercraft.png`;
+                    renderAll();
+                    exportBtn.disabled = false;
+                    showCustomSnackbar("Skin uploaded successfully!", "success", "Generated");
+                    addLog("Skin loaded and rendered via local file.");
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        });
+
+        genericInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                const val = genericInput.value.trim();
+                if(!val) { showCustomSnackbar("Please enter a username, UUID, or Texture!", "error"); return; }
+                
+                const originalVal = genericInput.value;
+                genericInput.disabled = true;
+                let seconds = 3;
+                genericInput.value = `Please wait ${seconds} seconds...`;
+                const cdInterval = setInterval(() => {
+                    seconds--;
+                    if (seconds > 0) {
+                        genericInput.value = `Please wait ${seconds} seconds...`;
+                    } else {
+                        clearInterval(cdInterval);
+                        genericInput.disabled = false;
+                        genericInput.value = originalVal;
+                        genericInput.focus();
+                    }
+                }, 1000);
+
+                let extracted = getSkinInputType(val);
+
+                if (extracted.type !== 'name' && typeof isAdBlockActive !== 'undefined' && isAdBlockActive) {
+                    let errorMsg = extracted.type === 'url' ? 
+                        "🔒 Disable AdBlock to use minecraft urls" : 
+                        "🔒 Disable AdBlock to use base64 skin texture";
+                    showCustomSnackbar(errorMsg, "error", "Locked Feature");
+                    addLog(`Request blocked by simulated AdBlock: ${extracted.type}`);
+                    return;
+                }
+                
+                let url = "";
+                if (extracted.type !== 'name') {
+                    addLog(`Fetching custom texture from URL/Base64...`);
+                    url = `https://starlightskins.lunareclipse.studio/render/skin/AlonsoAliaga/processed?skinTexture=${encodeURIComponent(extracted.value)}`;
+                    downloadedFileName = `custom_texture_papercraft.png`;
+                } else {
+                    addLog(`Fetching skin for: ${val}...`);
+                    url = `https://starlightskins.lunareclipse.studio/render/skin/${encodeURIComponent(val)}/processed`;
+                    downloadedFileName = `${val}_papercraft.png`;
+                }
+                
+                const img = new Image();
+                img.crossOrigin = "anonymous";
+                img.onload = () => {
+                    currentSkinImg = img;
+                    renderAll();
+                    exportBtn.disabled = false;
+                    showCustomSnackbar(`Loaded skin successfully`, "success", "Generated");
+                    addLog(`Successfully loaded and rendered skin.`);
+                };
+                img.onerror = () => {
+                    showCustomSnackbar("Could not load skin. Check input.", "error", "API Error");
+                    addLog(`Error: Failed to fetch skin data. Might be invalid.`);
+                };
+                img.src = url;
+            }
+        });
+
+        exportBtn.addEventListener('click', () => {
+            if (!currentSkinImg) return;
+            try {
+                const link = document.createElement('a');
+                link.download = downloadedFileName;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+                showCustomSnackbar("Template downloaded!", "success", "Exported");
+                addLog(`Exported layout as ${downloadedFileName}`);
+            } catch (error) {
+                showCustomSnackbar("Export failed! (CORS Issue)", "error", "Error");
+                addLog(`Error exporting canvas: ${error.message}`);
+            }
+        });
+
+        // ==========================================
+        // === ORIGINAL ALONSOALIAGA CORE SCRIPT ====
+        // ==========================================
+
+        if (typeof kofiWidgetOverlay !== 'undefined') {
+            kofiWidgetOverlay.draw('alonsoaliaga', {
+                'type': 'floating-chat',
+                'floating-chat.donateButton.text': 'Send love ❤️',
+                'floating-chat.donateButton.background-color': '#fcbf47',
+                'floating-chat.donateButton.text-color': '#323842'
+            });
+        }
+
+        const darkModeCheck = document.getElementById('darkModeCheck');
+        const body = document.body;
+        darkModeCheck.addEventListener('change', () => { body.classList.toggle('dark-mode', darkModeCheck.checked); });
+
+        let isAdBlockActive = true; 
+        
+        function processAds() {
+            if (!isAdBlockActive) return;
+            const lockContainers = [
+                {id: 'feature-linestyle', text: 'Disable AdBlock to access Line Styles', small: false},
+                {id: 'feature-modeltype', text: 'Disable AdBlock to access Model Types', small: false},
+                {id: 'feature-customskin', text: 'Disable AdBlock to<br>upload custom skins', small: true},
+                {id: 'feature-advanced', text: 'Disable AdBlock to access Advanced Options', small: false}
+            ];
+            lockContainers.forEach(feature => {
+                const el = document.getElementById(feature.id);
+                if(el && !el.querySelector('.ad-locked-overlay')) {
+                    const overlay = document.createElement('div');
+                    overlay.className = 'ad-locked-overlay';
+                    const fontSize = feature.small ? '10px' : '14px';
+                    overlay.innerHTML = `
+                        <span class="emoji" style="font-size: 16px;">🔒</span>
+                        <span class="text" style="font-size: ${fontSize};">${feature.text}</span>
+                    `;
+                    el.appendChild(overlay);
+                }
+            });
+            layer();
+        }
+
+        function checkSite(window) {
+            fetch('https://raw.githubusercontent.com/AlonsoAliaga/AlonsoAliagaAPI/refs/heads/main/api/tools/tools-list.json')
+                .then(res => res.json())
+                .then(content => {
+                let toolsArray = content.map(toolData => `<span>💠</span> <span${toolData.clazz ? ` class="${toolData.clazz}"` : ""}${toolData.style ? ` style="${toolData.style}"` : ""}><a title="${toolData.description}" id="tool-priority-${toolData.priority}" href="${toolData.link}" target="_blank">${toolData.name}</a></span>`);
+                document.getElementById("tools-for-you").innerHTML = toolsArray.join(`<br>`);
+                })
+                .catch(err => console.log("Tools fetch error:", err));
+        }
+
+        let skin;
+        function loadChecking() {
+            let href = window.location.href;
+            if(!href.includes(atob("YWxvbnNvYWxpYWdhLmdpdGh1Yi5pbw=="))) return;
+            let link = atob("aHR0cHM6Ly9hbG9uc29hcGkuZGlzY2xvdWQuYXBwL2NoZWNraW5nP3NpdGU9PHNpdGU+JmtleT08a2V5Pg==")
+            .replace(/<site>/g,"skin-papercraft").replace(/<key>/g,"KEY-A")
+            .replace(/<lock>/g,(typeof window.getRandomStyle == "undefined" || typeof adBlockEnabled == "undefined" || adBlockEnabled || skin != undefined) ? "yes" : "no");
+            let counter = document.getElementById("online-counter");
+            if(counter) {
+                $.ajax({
+                    url: link, type: "GET", dataType: "json", data: {},
+                    success: function (result) {
+                        counter.dataset.failed = "0"; counter.style.display = "flex";
+                        if(isNaN(result)) { counter.textContent = `🟡 Report issues on Discord.`; counter.style.backgroundColor = "yellow"; counter.style.color = "black"; } 
+                        else { counter.textContent = `🟢 ${result} online using our Tool!`; counter.style.backgroundColor = "green"; counter.style.color = "white"; }
+                    },
+                    error: function (e) {
+                        if(counter.style.display != "none") {
+                            let currentFails = +counter.dataset.failed || 0;
+                            if(currentFails >= 1) counter.style.display = "none";
+                            else { counter.textContent = `🔴 Check your internet connection!`; counter.style.backgroundColor = "#7c0000"; counter.dataset.failed = `${currentFails + 1}` }
+                        }
+                    }
+                });
+            }
+        }
+        let times = 0;
+        function loadCounter() {
+            let link = atob("aHR0cHM6Ly9hbG9uc29hcGkuZGlzY2xvdWQuYXBwL2NvdW50ZXI/c2l0ZT08c2l0ZT4ma2V5PTxrZXk+").replace(/<site>/g,"skin-papercraft").replace(/<key>/g,"KEY-A");
+            let counter = document.getElementById("visitor-counter");
+            if(counter) {
+            $.ajax({
+                url: link, type: "GET", dataType: "json", data: {},
+                success: function (result) {
+                    document.getElementById("counter-amount").innerHTML = isNaN(result) ? "Click to return!" : `Visits: ${result}`;
+                },
+                error: function (e) {
+                    times++; document.getElementById("counter-amount").innerHTML = "Click to return!";
+                    if(times <= 1) setTimeout(loadCounter, 10000);
+                }
+            });
+            }
+        }
+
+        window.addEventListener('load', function() {
+            initFlags();
+            checkSite(window); 
+            loadCounter(); 
+            initBackgrounds(); // Carga las opciones del fondo al iniciar
+            setTimeout(()=> {if(typeof window.getRandomStyle == "undefined" || typeof skin != "undefined" || typeof adBlockEnabled == "undefined" || adBlockEnabled) processAds()}, 1000);
+            Promise.all([
+                document.fonts.load('10px "MinecraftRegular"'),
+                document.fonts.load('10px "MinecraftBold"'),
+                document.fonts.load('10px "MinecraftItalic"'),
+                document.fonts.load('10px "MinecraftBoldItalic"')
+            ]).then(() => {
+                renderAll();
+            }).catch(() => {
+                renderAll();
+            });
+            setTimeout(()=>{
+              let href = window.location.href;
+              if(!href.includes(atob("YWxvbnNvYWxpYWdhLmdpdGh1Yi5pbw=="))) {
+                try{document.title = `Page stolen from https://${atob("YWxvbnNvYWxpYWdhLmdpdGh1Yi5pbw==")}`;}catch(e){}
+                window.location = `https://${atob("YWxvbnNvYWxpYWdhLmdpdGh1Yi5pbw==")}/skin-papercraft/`}
+            },150);
+            setTimeout(() => { loadChecking(); setInterval(loadChecking, 10000); }, 100);
+            addLog("System Ready. Enter Name/UUID and press Enter, or Upload a Skin.");
+
+            // Load default skin
+            const defaultImg = new Image();
+            defaultImg.crossOrigin = "anonymous";
+            defaultImg.onload = () => {
+                currentSkinImg = defaultImg;
+                downloadedFileName = `AlonsoAliaga_papercraft.png`;
+                renderAll();
+                exportBtn.disabled = false;
+                addLog("Loaded default skin for AlonsoAliaga.");
+            };
+            defaultImg.src = `https://starlightskins.lunareclipse.studio/render/skin/AlonsoAliaga/processed`;
+        });
+
+    </script>
+    <script>
+      async function layer(){
+      const config={url:atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Fsb25zb0FsaWFnYS9BbG9uc29BbGlhZ2FBUEkvcmVmcy9oZWFkcy9tYWluL2FwaS9hZHMvYWRzLmpzb24='),rotate:true,targetClasses:['.profile_input_label','.profile_auth','.profile_base','.minecraft_auth']};
+      const style=document.createElement('style');
+      style.innerHTML=`.aa-promo-box{background:#ffffff;border:1px solid #e0e0e0;box-shadow:0 1px 3px rgba(0,0,0,0.06);font-family:Arial,sans-serif;text-decoration:none;display:flex;flex-direction:column;box-sizing:border-box;padding:10px;border-radius:4px;transition:box-shadow 0.2s;overflow:hidden;width:100%;margin:0 auto;}.aa-promo-box:hover{box-shadow:0 4px 8px rgba(0,0,0,0.12);}.aa-promo-box[data-theme="dark"]{background:#2b2d31;border:1px solid #1e1f22;}.aa-promo-box[data-theme="dark"] .aa-promo-title{color:#5865F2;}.aa-promo-box[data-theme="dark"] .aa-promo-desc{color:#dbdee1;}.aa-promo-box[data-theme="dark"] .aa-sponsor-tag{color:#949ba4;}.aa-media-wrapper{text-align:center;margin-bottom:8px;display:flex;justify-content:center;align-items:center;min-height:0;}.aa-media-content{max-width:100%;max-height:100%;object-fit:contain;display:block;}.aa-text-wrapper{text-align:left;flex-shrink:1;}.aa-promo-horizontal{flex-direction:row!important;align-items:center;justify-content:space-between;padding:10px 15px;}.aa-promo-horizontal .aa-text-wrapper{order:1;margin-right:15px;display:flex;flex-direction:column;justify-content:center;}.aa-promo-horizontal .aa-media-wrapper{order:2;margin-bottom:0;height:100%;justify-content:flex-end;}.aa-sponsor-tag{font-size:10px;color:#70757a;margin-bottom:4px;display:block;}.aa-promo-title{color:#1a0dab;font-size:clamp(13px,3vw,14px);font-weight:normal;margin:0 0 4px 0;line-height:1.3;}.aa-promo-desc{color:#4d5156;font-size:clamp(12px,2.5vw,13px);margin:0;line-height:1.4;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}`;
+      document.head.appendChild(style);
+      try{const response=await fetch(config.url+'?t='+Date.now());let promos=await response.json();if(promos.length===0)return;if(!config.rotate)promos.sort((a,b)=>a.Priority-b.Priority);const targetElements=document.querySelectorAll(config.targetClasses.join(', '));let promoIndex=0;targetElements.forEach(container=>{let promo=config.rotate?promos[Math.floor(Math.random()*promos.length)]:promos[promoIndex%promos.length];if(!config.rotate)promoIndex++;const maxWidth=container.getAttribute('data-max-width'),maxHeight=container.getAttribute('data-max-height'),theme=container.getAttribute('data-theme'),layout=container.getAttribute('data-layout'),tSize=container.getAttribute('data-text-size')||"55",mSize=container.getAttribute('data-media-size')||"40";const promoLink=document.createElement('a');promoLink.href=promo.Link;promoLink.target='_blank';promoLink.className='aa-promo-box';if(theme)promoLink.setAttribute('data-theme',theme);if(maxWidth)promoLink.style.maxWidth=maxWidth;let isHorizontal=false;const hVal=maxHeight?parseInt(maxHeight.replace(/\D/g,'')):null,wVal=maxWidth?parseInt(maxWidth.replace(/\D/g,'')):null;if(layout==='horizontal')isHorizontal=true;else if(layout==='vertical')isHorizontal=false;else{if(hVal&&hVal<=160)isHorizontal=true;else if(!maxHeight&&!maxWidth){isHorizontal=true;promoLink.style.maxHeight='140px';}if(wVal&&wVal<250)isHorizontal=false;}if(isHorizontal)promoLink.classList.add('aa-promo-horizontal');const imgWrap=document.createElement('div');imgWrap.className='aa-media-wrapper';if(isHorizontal)imgWrap.style.width=mSize+'%';const img=document.createElement('img');img.src=promo.Image+(promo.Image.includes('?')?'&':'?')+'t='+Date.now();img.className='aa-media-content';if(!maxHeight&&!isHorizontal)img.style.maxHeight='150px';imgWrap.appendChild(img);const textWrap=document.createElement('div');textWrap.className='aa-text-wrapper';if(isHorizontal)textWrap.style.width=tSize+'%';const badge=document.createElement('span');badge.className='aa-sponsor-tag';badge.innerText='Patrocinado';const title=document.createElement('h3');title.className='aa-promo-title';title.innerText=promo.Title;const desc=document.createElement('p');desc.className='aa-promo-desc';desc.innerText=promo.Lines.join(' ');textWrap.appendChild(badge);textWrap.appendChild(title);textWrap.appendChild(desc);promoLink.appendChild(imgWrap);promoLink.appendChild(textWrap);if(maxHeight)promoLink.style.maxHeight=maxHeight;container.style.display='block';container.style.width='100%';container.innerHTML='';container.appendChild(promoLink);});}catch(e){console.error('Error:',e);}};
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5185973148525065"
+     crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-5185973148525065"
+             data-ad-slot="2004758913"
+             data-ad-format="auto"
+             data-full-width-responsive="true">
+        </ins>
+    <script src="resources.js?v=545" onerror="skin='AlonsoAliaga';processAds();"></script>
+</body>
+</html>
