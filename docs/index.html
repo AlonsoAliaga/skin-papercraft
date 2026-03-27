@@ -2615,7 +2615,14 @@
                 })
                 .catch(err => console.log("Tools fetch error:", err));
         }
-
+        let options = [
+            `🟢 <count> online bringing their skins to the real world!`,
+            `🟢 <count> players pulling their avatars out of the screen right now!`,
+            `🟢 <count> users teleporting their skins from the game to their desks!`,
+            `🟢 <count> online generating printable templates for their skins!`,
+            `🟢 <count> users crafting 3D paper models of their characters!`
+        ]
+        let text = options[Math.floor(Math.random() * options.length)]
         let skin;
         function loadChecking() {
             let href = window.location.href;
@@ -2630,7 +2637,7 @@
                     success: function (result) {
                         counter.dataset.failed = "0"; counter.style.display = "flex";
                         if(isNaN(result)) { counter.textContent = `🟡 Report issues on Discord.`; counter.style.backgroundColor = "yellow"; counter.style.color = "black"; } 
-                        else { counter.textContent = `🟢 ${result} online using our Tool!`; counter.style.backgroundColor = "green"; counter.style.color = "white"; }
+                        else { counter.textContent = text.replace(/<count>/g, result); counter.style.backgroundColor = "green"; counter.style.color = "white"; }
                     },
                     error: function (e) {
                         if(counter.style.display != "none") {
